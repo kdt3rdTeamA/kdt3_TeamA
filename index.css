@@ -73,3 +73,7 @@ i {
 .timeSection .list li:hover {
     font-weight: bold;
 }
+
+span{
+    font-size: 10px;
+}
