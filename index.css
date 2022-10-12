@@ -5,6 +5,10 @@ body{
     
 }
 
+.dp-none  {
+    display: none !important; 
+}
+
 header {
     font-family: 'Jua', sans-serif;
 
@@ -46,7 +50,27 @@ i {
 .timeSection .list li {
     display: inline-block;
     padding: 15px 0;
+    cursor: pointer;
 }
+
+.themeList li {
+    display: inline-block;
+    font-size: 30px;
+    list-style-type: none;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.Theme {
+    display: inline-block;
+    font-size: 30px;
+    list-style-type: none;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+
+
 
 .main{
     position: fixed;
@@ -71,5 +95,13 @@ i {
 
 
 .timeSection .list li:hover {
+    font-weight: bold;
+}
+
+.themeList li:hover {
+    font-weight: bold;
+}
+
+.Theme li:hover{
     font-weight: bold;
 }
