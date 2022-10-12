@@ -24,7 +24,7 @@ var wsArr = [`변명 중에서도 <br>가장 어리석고 못난 변명은 <b><b
         ,`항상 갈망하라. 늘 바보처럼 언제나 우직하게, 하루하루를 인생의 마지막 날처럼 살아라.<br><span>-스티브잡스-</span>`
 ];
 
-const wsOut = document.querySelector('#wsArr');
+const wsOut = document.querySelector('.wsArr');
     var i = (Math.floor(Math.random()*10));
     wsOut.innerHTML=[wsArr[i]];
 
