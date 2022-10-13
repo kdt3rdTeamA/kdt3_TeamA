@@ -2,11 +2,49 @@ let btn = $('.timeSection .list li');
 let btnSec = $('.list');
 let themeSec = $('.themeList');
 let themeli = $('.themeList li');
+let back1 = $('.back1');
+let back2 = $('.back2');
+let thClassic = $('.classic');
+let thNature = $('.nature');
+let thAnimal = $('.animal');
+let thFootball = $('.football');
+let theme = $('.Theme');
 
 btn.click(function() {
     btnSec.toggleClass('dp-none');
     themeSec.toggleClass('dp-none');
 });
+
+back1.click(function() {
+    themeSec.toggleClass('dp-none');
+    btnSec.toggleClass('dp-none');
+})
+
+// back2.click(function() {
+//     back2.parent().classAdd('dp-none');
+//     themeSec.toggleClass('dp-none');
+// })
+
+themeSec.children('li:eq(0)').click(function() {
+    themeSec.toggleClass('dp-none');
+    thClassic.toggleClass('dp-none');
+});
+
+themeSec.children('li:eq(1)').click(function() {
+    themeSec.toggleClass('dp-none');
+    thNature.toggleClass('dp-none');
+});
+
+themeSec.children('li:eq(2)').click(function() {
+    themeSec.toggleClass('dp-none');
+    thAnimal.toggleClass('dp-none');
+});
+
+themeSec.children('li:eq(3)').click(function() {
+    themeSec.toggleClass('dp-none');
+    thFootball.toggleClass('dp-none');
+});
+
 
 // if (btn.hasClass(back))
 
