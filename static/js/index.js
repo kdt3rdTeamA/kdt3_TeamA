@@ -88,6 +88,6 @@ var wsArr = [`변명 중에서도 <br>가장 어리석고 못난 변명은 <b><b
 ];
 
 const wsOut = document.querySelector('.wsArr');
-    var i = (Math.floor(Math.random()*10));
+    var i = (Math.floor(Math.random()*9));
     wsOut.innerHTML=[wsArr[i]];
 
