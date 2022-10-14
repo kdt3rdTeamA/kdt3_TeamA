@@ -15,10 +15,6 @@ a {
     display: none !important; 
 }
 
-header {
-    margin-top: 5vh;
-}
-
 .headerSection {
     display: flex;
     justify-content: center;
