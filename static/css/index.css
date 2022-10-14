@@ -95,15 +95,28 @@ i {
     }
 }
 
+@media (max-width: 650px) {
+    .bi-hourglass {
+        display: none;
+    }
+    .bi-list {
+        font-size: 30px !important;
+    }
+}
 
 .timeSection .list li:hover {
     font-weight: bold;
+    color: white;
 }
 
 .themeList li:hover {
     font-weight: bold;
+    color: white;
+
 }
 
 .Theme li:hover{
     font-weight: bold;
+    color: white;
+
 }
