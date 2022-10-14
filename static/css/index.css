@@ -61,7 +61,7 @@ i {
     cursor: pointer;
 }
 
-.Theme {
+.Theme ul {
     display: inline-block;
     font-size: 30px;
     list-style-type: none;
