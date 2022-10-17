@@ -1,0 +1,25 @@
+body {
+    color: rgb(4, 32, 51);
+    background-color: rgb(82, 159, 226);
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -5;
+}
+
+
+.timer span{
+    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+}
+
+
+
+.btn {
+    background: rgb(4, 32, 51);
+    color: rgb(82, 159, 226);
+    border: none;
+}

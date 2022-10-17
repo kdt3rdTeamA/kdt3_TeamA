@@ -1,0 +1,11 @@
+body {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/472/319/661/anime-original-fantasy-whale-hd-wallpaper-preview.jpg);
+    background-size: cover;
+    color: rgb(19, 20, 75);
+}
+
+.btn {
+    background: rgb(76, 78, 170);
+    color: rgb(19, 20, 75);
+    border: none;
+}

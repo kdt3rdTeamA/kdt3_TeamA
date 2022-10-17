@@ -1,0 +1,23 @@
+body {
+    color: yellow;
+    background-color: red;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -5;
+}
+
+.timer span{
+    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+}
+
+
+.btn {
+    background: yellow;
+    color: red;
+    border: none;
+}
