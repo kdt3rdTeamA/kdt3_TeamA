@@ -24,4 +24,5 @@ btn
     border: solid 2px black;
     padding: 5px 20px;
     border-radius: 15px;
+    cursor: pointer;
 }
