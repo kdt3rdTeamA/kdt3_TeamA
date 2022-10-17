@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+
+}
+/* 
+title
+timer
+btn
+*/
+.title {
+    font-size: 120px;
+}
+
+.timer {
+    font-size: 60px;
+}
+
+.btn {
+    background: rgb(255, 255, 255);
+    font-size: 30px;
+    border: solid 2px black;
+    padding: 5px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}

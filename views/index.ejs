@@ -5,22 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get timer</title>
-    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/sideBar.css">
+    <!-- 폰트! -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/index.css">
 </head>
 <body>
+
     <div class="main"></div>
+    
+    <aside>
+        <%- include('./sideBarJ.ejs') %>
+    </aside>
     <header>
         <div class="headerSection">
             <i class="bi bi-hourglass"></i>
             <h1 class="title">Get timer</h1>
         </div>
     </header>
-
     <section>
         <div class="wordSection">
             <p class="wsArr"></p>
@@ -31,40 +38,117 @@
                 <li class="timerBtn">timer</li><br>
                 <li class="swBtn">stopwatch</li><br>
             </ul>
-            <ul class="themeList dp-none">
+
+            <!-- pomo under theme -->
+            <ul class="pomo themeList dp-none">
                 <li>classic</li><br>
                 <li>nature</li><br>
                 <li>animal</li><br>
                 <li>football</li><br>
-                <li class="back">back</li>
+                <li class="pomo back1">back</li>
             </ul>
-            <ul class="dp-none classic Theme">
-                <li>dark</li><br>
-                <li>light</li><br>
-                <li class="back">back</li>
-            </ul>
-            <ul class="dp-none nature Theme">
-                <li>tomato</li><br>
-                <li>fresh</li><br>
-                <li>sky</li><br>
-                <li class="back">back</li>
-            </ul>
-            <ul class="dp-none animal Theme">
-                <li>cat</li><br>
-                <li>dog</li><br>
-                <li>whale</li><br>
-                <li class="back">back</li>
-            </ul>
-            <ul class="dp-none football Theme ">
-                <li>dark</li><br>
-                <li>light</li><br>
-                <li class="back">back</li>
-            </ul>
+            <div class="Theme">
+                <ul class="dp-none pomo classic">
+                    <li><a href="/pomodoro_dark">dark</a></li><br>
+                    <li><a href="/pomodoro_light">light</a></li><br>
+                    <li class="pomo back2">back</li>
+                </ul>
+                <ul class="dp-none pomo nature">
+                    <li><a href="/pomodoro_tomato">tomato</a></li><br>
+                    <li><a href="/pomodoro_fresh">fresh</a></li><br>
+                    <li><a href="/pomodoro_sky">sky</a></li><br>
+                    <li class="pomo back3">back</li>
+                </ul>
+                <ul class="dp-none pomo animal">
+                    <li><a href="/pomodoro_dog">dog</a></li><br>
+                    <li><a href="/pomodoro_cat">cat</a></li><br>
+                    <li><a href="/pomodoro_whale">whale</a></li><br>
+                    <li class="pomo back4">back</li>
+                </ul>
+                <ul class="dp-none pomo football">
+                    <li><a href="/pomodoro_mancity">Manchester City</a></li><br>
+                    <li><a href="/pomodoro_manuni">Manchester United</a></li><br>
+                    <li><a href="/pomodoro_tottenham">Tottenham Hotspur</a></li><br>
+                    <li><a href="/pomodoro_psg">Paris Saint-Germain</a></li><br>
+                    <li class="pomo back5">back</li>
+                </ul>
+
+                <!-- timer under theme -->
+                <ul class="themeList dp-none timer">
+                    <li>classic</li><br>
+                    <li>nature</li><br>
+                    <li>animal</li><br>
+                    <li>football</li><br>
+                    <li class="timer back1">back</li>
+                </ul>
+                <div class="Theme">
+                    <ul class="dp-none classic timer">
+                        <li><a href="/timer_dark">dark</a></li><br>
+                        <li><a href="/timer_light">light</a></li><br>
+                        <li class="timer back2">back</li>
+                    </ul>
+                    <ul class="dp-none nature timer">
+                        <li><a href="/timer_tomato">tomato</a></li><br>
+                        <li><a href="/timer_fresh">fresh</a></li><br>
+                        <li><a href="/timer_sky">sky</a></li><br>
+                        <li class="timer back3">back</li>
+                    </ul>
+                    <ul class="dp-none animal timer">
+                        <li><a href="/timer_dog">dog</a></li><br>
+                        <li><a href="/timer_cat">cat</a></li><br>
+                        <li><a href="/timer_whale">whale</a></li><br>
+                        <li class="timer back4">back</li>
+                    </ul>
+                    <ul class="dp-none football timer">
+                        <li><a href="/timer_mancity">Manchester City</a></li><br>
+                        <li><a href="/timer_manuni">Manchester United</a></li><br>
+                        <li><a href="/timer_tottemham">Tottenham Hotspur</a></li><br>
+                        <li><a href="/timer_psg">Paris Saint-Germain</a></li><br>
+                        <li class="timer back5">back</li>
+                    </ul>
+
+
+                    <!-- stopwatch under theme -->
+                    <ul class="themeList dp-none sw">
+                        <li>classic</li><br>
+                        <li>nature</li><br>
+                        <li>animal</li><br>
+                        <li>football</li><br>
+                        <li class="sw back1">back</li>
+                    </ul>
+                    <div class="Theme">
+                        <ul class="dp-none classic sw">
+                            <li><a href="/sw_dark">dark</a></li><br>
+                            <li><a href="/sw_light">light</a></li><br>
+                            <li class="sw back2">back</li>
+                        </ul>
+                        <ul class="dp-none nature sw">
+                            <li><a href="/sw_tomato">tomato</a></li><br>
+                            <li><a href="/sw_fresh">fresh</a></li><br>
+                            <li><a href="/sw_sky">sky</a></li><br>
+                            <li class="sw back3">back</li>
+                        </ul>
+                        <ul class="dp-none animal sw">
+                            <li><a href="/sw_dog">dog</a></li><br>
+                            <li><a href="/sw_cat">cat</a></li><br>
+                            <li><a href="/sw_whale">whale</a></li><br>
+                            <li class="sw back4">back</li>
+                        </ul>
+                        <ul class="dp-none football sw">
+                            <li><a href="/sw_mancity">Manchester City</a></li><br>
+                            <li><a href="/sw_manuni">Manchester United</a></li><br>
+                            <li><a href="/sw_tottenham">Tottenham Hotspur</a></li><br>
+                            <li><a href="/sw_psg">Paris Saint-Germain</a></li><br>
+                            <li class="sw back5">back</li>
+                        </ul>
+            </div>
         </div>
     </section>
 
     <footer>
     </footer>
     <script src="/static/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
 </body>
 </html>
