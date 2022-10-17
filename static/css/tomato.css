@@ -1,0 +1,9 @@
+body {
+    background-color: tomato;
+    color: white;
+}
+
+.btn {
+    color: tomato;
+    border-color: white;
+}
