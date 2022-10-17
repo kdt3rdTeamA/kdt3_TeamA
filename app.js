@@ -127,3 +127,8 @@ app.get('/sw_tottenham', function(req, res) {
 app.get('/sw_psg', function(req, res) {
     res.render('sw_psg');
 })
+
+// gababo
+app.get('/gababo', function(req, res) {
+    res.render('gababo');
+})
