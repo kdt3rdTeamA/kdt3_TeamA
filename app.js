@@ -18,3 +18,11 @@ app.get('/pomodoro_tomato', function(req, res) {
     res.render('pomodoro_tomato');
 })
 
+
+app.get('/pomodoro_dark', function(req, res) {
+    res.render('pomodoro_dark');
+})
+
+app.get('/pomodoro_light', function(req, res) {
+    res.render('pomodoro_light');
+})
