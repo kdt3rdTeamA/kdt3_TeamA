@@ -69,9 +69,6 @@ i {
     cursor: pointer;
 }
 
-
-
-
 .main{
     position: fixed;
     top: 50%;
@@ -104,4 +101,12 @@ i {
 
 .Theme li:hover{
     font-weight: bold;
+}
+
+.wsArr{
+    margin-left: 42px;
+}
+
+span{
+    font-size: 12px;
 }

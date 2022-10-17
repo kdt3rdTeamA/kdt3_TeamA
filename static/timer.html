@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0px;
+}
+</style>
+</head>
+<body>
+<div>남은시간
+<p id="demo"></p>
+<p id="demo1"></p>
+
+</div>
+    <form>
+        <label for="dayss">Days</label> 
+        <input type="number" id="Days" name="days" value="0">
+        <label for="hours">Hours</label> 
+        <input type="number" id="Hours" name="hours" value="0">
+        <label for="minutes">Minutes</label> 
+        <input type="number" id="Minutes" name="minutes" value="0">
+        <label for="seconds">Seconds</label> 
+        <input type="text" id="Seconds" name="seconds" value="0">
+        <input type="submit" id="startClk">
+        <input type="button" id="pauseClk" value="정지">
+        <input type="button" id="restartClk" value="재시작">
+        <input type="button" id="resetClk" value="리셋">
+
+
+    </form>
+<br>
+<br>
+<!-- <div> 남은시간 : <p id="stopWatch" name="stopWatch"> 00:00:00 </p></div> -->
+<br>
+<br>
+
+
+<script>    
+    const form= document.querySelector('form');
+    form.addEventListener('submit', function (event) {
+        console.log('submit');
+        event.preventDefault();
+        
+        const daysIp = document.querySelector('input[name="days"]').value;
+        const hoursIp = document.querySelector('input[name="hours"]').value;
+        const minutesIp = document.querySelector('input[name="minutes"]').value;
+        const secondsIp = document.querySelector('input[name="seconds"]').value;
+
+        // start(daysIp, hoursIp, minutesIp, secondsIp);
+        strat2(secondsIp, minutesIp, hoursIp);
+    });
+//-------------------------------------------------------------------------------------
+
+// function start(day, hour, min, sec){
+//     // 입력받은 카운트넣기
+//     var cnt = 1000*sec+1000*60*min+1000*60*60*hour+1000*60*60*24*day;
+//     var countDownDate = new Date().getTime()+new Date(cnt).getTime();
+//     const conNow = new Date().getTime();
+
+//     var x = setInterval(function() {
+//     console.log(conNow);
+        
+//         var now = new Date().getTime();
+//         // now는 증가 하면서 count에 감소를 줘서 카운트
+//         var distance = countDownDate - now;
+
+//         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//         var milsec = Math.floor((distance % 1000)/100);
+            
+//         // id="demo"에 카운트 결과 출력
+//         document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+//         + minutes + "m " + seconds + "s." + milsec;
+
+//         //시작 버튼 비활성화
+//         startClk.disabled = true;
+            
+//         // 카운트 끝났을때
+//         if (distance < 0) {
+//             clearInterval(x);
+//             startClk.disabled = false;
+//             document.getElementById("demo").innerHTML = "끝!";
+//         }
+//         // 버튼 클릭 상황
+//         document.getElementById('pauseClk').addEventListener('click', ()=>{
+//             clearInterval(x);
+//             startClk.disabled = false;
+//             console.log('STOP:', distance);
+//             //시간값이 저장 되어야
+//         });
+//         document.getElementById('resetClk').addEventListener('click', ()=>{
+//             clearInterval(x);
+//             demo.innerHTML = `passed time: ${(new Date().getTime()-conNow)/1000}s`
+//             console.log('re', new Date().getTime());
+//             startClk.disabled = false;
+
+//         });
+
+//     }, 50); // 0.05초마다 카운트 다운
+
+// }
+//-------------------------------------------------------------------------------------
+function strat2(secIp, minIp, hrIp){
+    var time = parseInt(secIp) + parseInt(minIp)*60 + parseInt(hrIp)*3600;
+
+    // console.log(time);
+    // time = parseInt(time)+parseInt(secIp); //
+    // console.log(time);
+
+    var hr = ""; 
+	var min = ""; //분
+	var sec = ""; //초
+
+    //시작 버튼 비활성화
+    startClk.disabled = true;
+
+	var x = setInterval(function() {
+        
+        min= parseInt(time/60);
+        hr = parseInt(min/60);
+		sec = parseInt((time)%60);
+        min = parseInt(min % 60);
+
+		document.getElementById("demo1").innerHTML = hr + "시" + min + "분" + sec + "초";
+		time--;
+
+		//타임아웃 시
+		if (time < 0) {
+			clearInterval(x); //setInterval() 실행을 끝냄
+            startClk.disabled = false;
+			document.getElementById("demo1").innerHTML = "시간초과";
+		}
+
+        document.getElementById('pauseClk').addEventListener('click', ()=>{
+            var saveT = time;
+            console.log(saveT);
+            clearInterval(x);
+            startClk.disabled = false;
+            
+            document.getElementById('restartClk').addEventListener('click', ()=>{
+                var y = setInterval(function() {
+                
+                    min= parseInt(saveT/60);
+                    hr = parseInt(min/60);
+                    sec = parseInt(saveT%60);
+                    min = parseInt(min % 60);
+
+		            document.getElementById("demo1").innerHTML = hr + "시" + min + "분" + sec + "초";
+		            saveT--; 
+                    if (saveT < 0) {
+			            clearInterval(y);
+			            document.getElementById("demo1").innerHTML = "시간초과";
+                        startClk.disabled = false;
+		            }
+                }, 1000);
+            });
+        });
+        document.getElementById('resetClk').addEventListener('click', ()=>{
+            clearInterval(x);
+            startClk.disabled = false;
+			document.getElementById("demo1").innerHTML = "reset";
+        });
+	}, 1000);
+}
+</script>
+</body>
+</html>
