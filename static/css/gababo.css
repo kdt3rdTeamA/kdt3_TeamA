@@ -21,3 +21,9 @@ body {
     width: 150px;
     height: 150px;
 }
+
+.com-result,
+.user-result {
+    padding: 10px;
+    font-size: 30px;
+}
