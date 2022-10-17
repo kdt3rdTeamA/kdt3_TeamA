@@ -54,7 +54,7 @@ app.get('/pomodoro_psg', function(req, res) {
 
 // timer render section
 app.get('/timer_dark', function(req, res) {
-    res.render('timer_dark');
+    res.render('timer');
 })
 app.get('/timer_light', function(req, res) {
     res.render('timer_light');
