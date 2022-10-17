@@ -1,0 +1,12 @@
+body {
+    background-image: url(../img/fresh01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: greenyellow;
+}
+
+.btn {
+    color: white;
+    background: greenyellow;
+    border: none;
+}

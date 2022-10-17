@@ -26,3 +26,7 @@ btn
     border-radius: 15px;
     cursor: pointer;
 }
+
+.btn:hover {
+    transform: translateY(-10%);
+}
