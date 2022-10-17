@@ -10,9 +10,6 @@
     margin-left: 10px;
 }
 
-.btn:hover {
-    transform: translateY(-10%);
-}
 
 @media (max-width: 960px) {
     .title {
