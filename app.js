@@ -13,3 +13,8 @@ app.use('/static', express.static(__dirname + '/static'));
 app.get('/', function(req, res){
     res.render('index');
 })
+
+app.get('/pomodoro_tomato', function(req, res) {
+    res.render('pomodoro_tomato');
+})
+
