@@ -11,14 +11,16 @@ body {
     z-index: -5;
 }
 
-
 .timer span{
     text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
 }
 
-
-
 .btn {
+    background: rgb(4, 32, 51);
+    color: rgb(82, 159, 226);
+    border: none;
+}
+.inputBtn {
     background: rgb(4, 32, 51);
     color: rgb(82, 159, 226);
     border: none;

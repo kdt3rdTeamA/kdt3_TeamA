@@ -1,0 +1,73 @@
+const form= document.querySelector('form');
+        form.addEventListener('submit', function (event) {
+            console.log('submit');
+            event.preventDefault();
+            
+            const daysIp = document.querySelector('input[name="days"]').value;
+            const hoursIp = document.querySelector('input[name="hours"]').value;
+            const minutesIp = document.querySelector('input[name="minutes"]').value;
+            const secondsIp = document.querySelector('input[name="seconds"]').value;
+
+            strat(secondsIp, minutesIp, hoursIp, daysIp);
+        });
+
+    function strat(secIp, minIp, hrIp, dayIp){
+        var time = parseInt(secIp) + parseInt(minIp)*60 + parseInt(hrIp)*3600 + parseInt(dayIp)*3600*24;
+        var day = "";
+        var hr = ""; 
+        var min = "";
+        var sec = "";
+
+        //시작 버튼 비활성화
+        startClk.disabled = true;
+
+        var x = setInterval(function() {
+            day= parseInt((time/(60*60*24))%(60*60*24));
+            hr= parseInt((time/3600)% 3600%24);
+            min = parseInt((time/60)% 60);
+            sec = parseInt(time%60);
+            // min = parseInt(min % 60);
+
+            document.getElementById("demo").innerHTML = day + "일" + hr + "시" + min + "분" + sec + "초";
+            time--;
+
+            //타임아웃 시
+            if (time < 0) {
+                clearInterval(x); //setInterval() 실행을 끝냄
+                startClk.disabled = false;
+                document.getElementById("demo").innerHTML = "Time Out";
+            }
+
+            //버튼 클릭 이벤트
+            document.getElementById('pauseClk').addEventListener('click', ()=>{
+                var saveT = time;
+                console.log(saveT);
+                clearInterval(x);
+                startClk.disabled = false;
+                
+                document.getElementById('restartClk').addEventListener('click', ()=>{
+                    var y = setInterval(function() {
+                    
+                        min= parseInt(saveT/60);
+                        hr = parseInt(min/60);
+                        sec = parseInt(saveT%60);
+                        min = parseInt(min % 60);
+
+                        document.getElementById("demo").innerHTML = hr + "시" + min + "분" + sec + "초";
+                        saveT--; 
+                        if (saveT < 0) {
+                            clearInterval(y);
+                            document.getElementById("demo").innerHTML = "Time Out";
+                            startClk.disabled = false;
+                        }
+                    }, 1000);
+                });
+            });
+            document.getElementById('resetClk').addEventListener('click', ()=>{
+                clearInterval(x);
+                startClk.disabled = false;
+                time = "";
+                document.getElementById("demo").innerHTML = "<strong>Reset !!!</strong>";
+            });
+        }, 1000); //1초 마다 실행
+    }
