@@ -1,7 +1,21 @@
-.demo {
+#demo {
+    position: relative;
     text-align: center;
+    height: 60px;
     margin-top: 0px;
 }
 .timerForm{
     font-size: 30px;
+}
+.inputBtn{
+    font-size: 30px;
+    border: solid 1px black;
+    padding: 5px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: right;
+    width: 50px;
+}
+.ing{
+    cursor: not-allowed;
 }
