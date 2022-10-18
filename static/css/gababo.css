@@ -3,7 +3,8 @@
 body {
     text-align: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 p,
@@ -11,46 +12,72 @@ h3 {
     margin: 0;
 }
 
+header {
+    height: 15vh;
+    background-color: black;
+    color: white;
+    padding: 8px;
+}
+
+section {
+    height: 70vh;
+}
+
+footer {
+    height: max-content;
+    background-color: black;
+    color: white;
+    padding-bottom: 20px;
+}
+
 .main-section {
     display: flex;
     justify-content: space-around;
+    height: 100%;
 }
 
 .user,
 .middle,
 .computer {
-    width: 120px;
+
+    width: 33.3333%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.user {
+    border-right: 2px solid black;
+}
+
+.computer {
+    border-left: 2px solid black;
 }
 
 
 .user img,
 .computer img {
-    transform: translate(-10%, 0);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     width: 150px;
     height: 150px;
 }
 
 .com-result,
 .user-result {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 30px;
     font-size: 30px;
     border: 2px solid black;
     border-radius: 15px;
-    margin: 10px 0;
+    margin: 10px 1px;
+    width: 120px;
 }
 
 .btn-section {
-    margin-top: 30px;
-}
-header {
-    background-color: black;
-    color: white;
-    padding: 5px;
+    padding-top: 2rem;
 }
 
-footer {
-    background-color: black;
-    color: white;
-}
