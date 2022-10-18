@@ -14,3 +14,31 @@ body {
     color: white;
     border-color: white;
 }
+
+.dog {
+    display: inline-block;
+    
+}
+
+.dog {
+    animation: doridori 3s linear infinite;
+}
+
+@keyframes doridori {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(25deg);
+    }
+    50% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(-25deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+    
+}
