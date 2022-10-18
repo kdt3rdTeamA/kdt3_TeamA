@@ -11,6 +11,31 @@ body {
     border-color: white;
 }
 
+.tomatos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    /* font-size: 30px; */
+}
+
+.tomato:nth-child(odd) {
+    animation:float 2s linear infinite alternate;  
+}
+
+.tomato:nth-child(even) {
+    animation:float 2s linear infinite alternate 2s;  
+}
+
+
+
+.tomato{
+    font-size: 50px;
+}
+@keyframes float {
+    to{
+        transform: rotate(1turn);
+    }
+}
 
 
 
