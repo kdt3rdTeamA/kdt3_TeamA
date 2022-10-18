@@ -1,4 +1,7 @@
-let btn = $('.btn');
+
+
+let btn = $('.btn-section .btn');
+let resetBtn = $('.reset-btn');
 let userScore = 0;
 let computerScore = 0;
 let userScoreLoca = $('.user-score');
@@ -6,7 +9,23 @@ let computerScoreLoca = $('.computer-score');
 let comResult = $('.com-result');
 let userResult = $('.user-result');
 
+let switiching = setInterval(function() {
+    let randomResult = Math.floor(Math.random() * 3 + 1);
+    if (randomResult == 1) {
+        comResult.text('✌');
+    }
+    else if (randomResult == 2) {
+        comResult.text('✊');
+    }
+    else {
+        comResult.text('🤚');
+    }
+}, 100);
+
+
 btn.on('click', function() {
+    clearInterval(switiching);
+    btn.attr('disabled',true);
     // computer result section
     let randomResult = Math.floor(Math.random() * 3 + 1);
     let userResultScore;
@@ -23,15 +42,15 @@ btn.on('click', function() {
         userResultScore = 1;
         userResult.text('✌');
         if(userResultScore - randomResult == 0) {
-            console.log('draw');
+            Swal.fire('draw!');
         }
         else if (userResultScore - randomResult == -1) {
-            console.log('loose');
+            Swal.fire('loose!');
             computerScore += 1;
             computerScoreLoca.text(computerScore);
         }
         else {
-            console.log('win!');
+            Swal.fire('win!');
             userScore += 1;
             userScoreLoca.text(userScore);
         }
@@ -40,15 +59,15 @@ btn.on('click', function() {
         userResultScore = 2;
         userResult.text('✊');
         if(userResultScore - randomResult == 0) {
-            console.log('draw');
+            Swal.fire('draw!');
         }
         else if (userResultScore - randomResult == -1) {
-            console.log('loose');
+            Swal.fire('loose!');
             computerScore += 1;
             computerScoreLoca.text(computerScore);
         }
         else {
-            console.log('win!');
+            Swal.fire('win!');
             userScore += 1;
             userScoreLoca.text(userScore);
         }
@@ -57,17 +76,34 @@ btn.on('click', function() {
         userResultScore = 3;
         userResult.text('🤚');
         if(userResultScore - randomResult == 0) {
-            console.log('draw');
+            Swal.fire('draw!');
         }
         else if (userResultScore - randomResult == 2) {
-            console.log('loose');
+            Swal.fire('loose!');
             computerScore += 1;
             computerScoreLoca.text(computerScore);
         }
         else {
-            console.log('win!');
+            Swal.fire('win!');
             userScore += 1;
             userScoreLoca.text(userScore);
         }
     }
+    
+});
+
+resetBtn.on('click', function() {
+    btn.attr('disabled', false);
+    switiching = setInterval(function() {
+        let randomResult = Math.floor(Math.random() * 3 + 1);
+        if (randomResult == 1) {
+            comResult.text('✌');
+        }
+        else if (randomResult == 2) {
+            comResult.text('✊');
+        }
+        else {
+            comResult.text('🤚');
+        }
+    }, 100);
 })
