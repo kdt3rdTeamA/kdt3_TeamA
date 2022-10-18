@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lotto</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>번호추첨</h1>
+    <h3>로또번호추첨(범위 변경 가능)</h3>
+    <div>1부터 45중 6개 추첨</div>
+    <form id="lottoDraw">
+        <label for="lotto">숫자 범위</label>
+        <input name="lotto" type="number" min="0" value="45">
+        <input type="button" min="0" value="추첨!">
+    </form>
+    <hr>
+    <div> 추첨값 출력 : 
+        <span id="lottoPrint"></span>
+    </div>
+
+    <h3>숫자 범위&뽑는개수 지정 후 추첨</h3>
+    <form id="numDraw">
+        <label for="NrangeStart">시작 범위</label>
+        <input name="NrangeStart" type="number" value="1">
+        <label for="NrangeEnd">끝 범위</label>
+        <input name="NrangeEnd" type="number" value="5">
+        <label for="Nsetting">추첨 개수</label>
+        <input name="Nsetting" type="number" value="4">
+        <label for="Nignor">제외할수</label>
+        <input name="Nignor" type="number" min="0" value1="9" value2="12">
+        <input type="button" id="lotto" value="추첨!">
+    </form>
+    <hr>
+    <div> 추첨값 출력 : 
+        <span id="numPrint"></span>
+    </div>
+<!-- 레이아웃 요소 기능 순 -->
+    <script>
+
+    const form1= document.querySelector('#lottoDraw');
+    const form2= document.querySelector('#numDraw');
+
+    form1.addEventListener('click', function () {
+        event.preventDefault();
+
+        const lottoMax = document.querySelector('input[name="lotto"]').value;
+        console.log('CLk L');
+
+        document.getElementById('lottoPrint').innerHTML = draw(lottoMax, 6, 1);
+
+    });
+
+    form2.addEventListener('click', function () {
+        event.preventDefault();
+
+        const min = document.querySelector('input[name="NrangeStart"]').value;
+        const max = document.querySelector('input[name="NrangeEnd"]').value;
+        const drawNum = document.querySelector('input[name="Nsetting"]').value;
+        console.log('CLk N');
+
+        document.getElementById('numPrint').innerHTML = draw(max ,drawNum, min);   
+    });
+    
+
+
+
+
+
+
+        
+    function draw(max, draw, min){
+        var arr=[max];
+        for (i = 0; i < draw; i++) {
+            arr[i] = (Math.floor(Math.random()*parseInt(max-min+1)+parseInt(min-1)+1));
+            // arr[i] = (Math.floor(Math.random()*max)+1);
+            for (var j = 0; j < i; j++) { //중복값 없게
+                if (arr[i] === arr[j]) i--;
+            }
+        }
+        SelectionSort(arr);
+        return arr;
+    }
+
+    function SelectionSort( arr) {
+        for (var i = 0; i < arr.length-1 ; i++) {
+            var min = i;
+            for (var j = i + 1; j < arr.length+1 ;j++) {
+                if (arr[j] < arr[min]) min = j;
+            }
+            var temp = arr[i];
+            arr[i] = arr[min];
+            arr[min] = temp;
+        }
+    }
+    </script>
+</body>
+</html>
