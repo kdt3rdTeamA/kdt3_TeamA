@@ -47,12 +47,12 @@ btn.on('click', function() {
         else if (userResultScore - randomResult == -1) {
             Swal.fire('loose!');
             computerScore += 1;
-            computerScoreLoca.text(computerScore);
+            computerScoreLoca.text(`computer score: ${computerScore}`);
         }
         else {
             Swal.fire('win!');
             userScore += 1;
-            userScoreLoca.text(userScore);
+            userScoreLoca.text(`user score: ${userScore}`);
         }
     }
     else if ($(this).hasClass('ba')){
@@ -64,12 +64,12 @@ btn.on('click', function() {
         else if (userResultScore - randomResult == -1) {
             Swal.fire('loose!');
             computerScore += 1;
-            computerScoreLoca.text(computerScore);
+            computerScoreLoca.text(`computer score: ${computerScore}`);
         }
         else {
             Swal.fire('win!');
             userScore += 1;
-            userScoreLoca.text(userScore);
+            userScoreLoca.text(`user score: ${userScore}`);
         }
     }
     else {
@@ -81,12 +81,12 @@ btn.on('click', function() {
         else if (userResultScore - randomResult == 2) {
             Swal.fire('loose!');
             computerScore += 1;
-            computerScoreLoca.text(computerScore);
+            computerScoreLoca.text(`computer score: ${computerScore}`);
         }
         else {
             Swal.fire('win!');
             userScore += 1;
-            userScoreLoca.text(userScore);
+            userScoreLoca.text(`user score: ${userScore}`);
         }
     }
     
