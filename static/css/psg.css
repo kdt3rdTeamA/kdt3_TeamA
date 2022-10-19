@@ -2,11 +2,13 @@ body {
     background-color: rgb(45, 10, 102);
     color: white;
     text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
-    background-image:url("https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/1200px-Paris_Saint-Germain_F.C..svg.png"),
-    url("https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/1200px-Paris_Saint-Germain_F.C..svg.png");
+    background-image: linear-gradient(
+        rgba(45, 10, 102, 0.4),
+        rgba(45, 10, 102, 0.4)
+      ), url("https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/1200px-Paris_Saint-Germain_F.C..svg.png");
     background-repeat: no-repeat;
-    background-position: top right , top left;
-    background-size: 200px;
+    background-position: center center;
+    background-size: 300px;
     
 }
 
