@@ -41,3 +41,19 @@ body {
 
     
 }
+
+body {
+    text-shadow: none;
+}
+.sideBar {
+    background-color: #003F71;
+    border: 0px;
+    color: white;
+    border-radius: 15%;
+}
+.offcanvas {
+    background-color: rgb(110, 122, 249);
+}
+.dropdown-menu {
+    background-color: rgb(152, 160, 248);
+}

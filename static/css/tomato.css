@@ -36,5 +36,19 @@ body {
     }
 }
 
+.sideBar {
+    background-color: tomato;
+    border: 0px;
+    color: white;
+}
+.offcanvas {
+    background-color: tomato;
+    color: white;
+}
+.dropdown-menu {
+    background-color: rgb(252, 180, 167);
+    color: white;
+}
+
 
 

@@ -90,3 +90,15 @@ body {
       );
     }
   }
+
+.sideBar {
+    background-color: white;
+    border: 0px;
+    color: rgb(244, 191, 191);
+}
+.offcanvas {
+    background-color: rgb(244, 191, 191);
+}
+.dropdown-menu {
+    background-color: rgb(255, 172, 172);
+}
