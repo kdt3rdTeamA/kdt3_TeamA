@@ -6,68 +6,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lotto</title>
     <style>
+    body{
+        background-image: linear-gradient(
+            rgba(255,255,255, 0.4),
+            rgba(255,255,255, 0.4)
+            ), url("https://mylottokenya.co.ke/static/images/kenya-lotto/lotto-logo.png"),
+             url(http://imagescdn.gettyimagesbank.com/500/201606/a10504489.jpg) ;
+         background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 30%;
 
+
+    }
+    #Box1 {
+        display: none;
+        margin: 0 10%;
+        background-color: rgba(252, 238, 220, 0.8);
+        border: 1px solid black;
+        padding: 2% 10%;
+        font-size: 20px;
+    }
+    #Box2 {
+        display: none;
+        margin: 0 10%;
+        background-color: rgba(200, 238, 220, 0.8);
+        border: 1px solid black;
+        padding: 2% 10%;
+        font-size: 20px;
+    }
+    .numCir{
+        width: 40px;
+        height: 40px;
+        display: inline-block;        
+        padding: 8px 4px 0;;
+        border-radius: 50%;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        /* vertical-align: middle; */
+
+    }
+    form{
+        margin-top: 10%;
+        text-align: center;
+        align-items: center;
+    }
+    input{
+    text-align: right;
+    }
+    .subm{
+        border-radius: 50%;
+        height: 50px;
+        cursor: pointer;
+    }
     </style>
 </head>
 <body>
-    <h1>번호추첨</h1>
-    <h3>로또번호추첨(범위 변경 가능)</h3>
-    <div>1부터 45중 6개 추첨</div>
+    <div class="imglotto"></div>
     <form id="lottoDraw">
-        <label for="lotto">숫자 범위</label>
-        <input name="lotto" type="number" min="0" value="45">
-        <input type="button" min="0" value="추첨!">
-    </form>
-    <hr>
-    <div> 추첨값 출력 : 
-        <span id="lottoPrint"></span>
-    </div>
+        <h2>Lotto numbers draw!</h2>
 
-    <h3>숫자 범위&뽑는개수 지정 후 추첨</h3>
+        <label for="lotto">How many gmaes do you want?</label>
+        <input name="lotto" type="number" min="0" placeholder="Input number">
+        <input class="subm" type="submit" value="Draw!">
+        <hr>
+        <div id="Box1">
+            <span id="lottoLinePrint"><span id="lottoPrint"></span></span>
+         </div>
+    </form>   
+<!-- </div> -->
+
     <form id="numDraw">
-        <label for="NrangeStart">시작 범위</label>
-        <input name="NrangeStart" type="number" value="1">
-        <label for="NrangeEnd">끝 범위</label>
-        <input name="NrangeEnd" type="number" value="5">
-        <label for="Nsetting">추첨 개수</label>
-        <input name="Nsetting" type="number" value="4">
-        <label for="Nignor">제외할수</label>
-        <input name="Nignor" type="number" min="0" value1="9" value2="12">
-        <input type="button" id="lotto" value="추첨!">
-    </form>
-    <hr>
-    <div> 추첨값 출력 : 
-        <span id="numPrint"></span>
-    </div>
-<!-- 레이아웃 요소 기능 순 -->
-    <script>
+        <h2></h2>
 
+        <label for="NrangeStart">least number</label>
+        <input name="NrangeStart" type="number" value="1">
+        <label for="NrangeEnd">Maximum number</label>
+        <input name="NrangeEnd" type="number" value="5">
+        <label for="Nsetting">set draw numbers</label>
+        <input name="Nsetting" type="number" value="4">
+        <!-- <label for="Nignor">제외할수</label>
+        <input name="Nignor" type="number" min="0" value1="9" value2="12"> -->
+        <input type="submit"class="subm" value="Draw!">
+        <hr>
+        <div id="Box2">
+            <span id="numPrint"></span>
+        </div>
+    </form>
+    
+<!-- 레이아웃 요소 기능 순 -->
+
+    <script>
     const form1= document.querySelector('#lottoDraw');
     const form2= document.querySelector('#numDraw');
-
-    form1.addEventListener('click', function () {
+    var arr=[];
+    
+    form1.addEventListener('submit', function () {
         event.preventDefault();
+        document.getElementById('lottoPrint').innerHTML = "";
+        document.getElementById("Box1").style.display = 'inline-block';
 
-        const lottoMax = document.querySelector('input[name="lotto"]').value;
+
+        const lines = document.querySelector('input[name="lotto"]').value;
         console.log('CLk L');
 
-        document.getElementById('lottoPrint').innerHTML = draw(lottoMax, 6, 1);
+        for(var i=0; i<lines; i++){
+        arr=draw(45, 6, 1);
+        document.getElementById('lottoPrint').innerHTML += (i+1)+' line';
+            for(var j=0; j<arr.length; j++){
+                if(0<arr[j] && arr[j] < 11){
+                    document.getElementById('lottoPrint').innerHTML +=  " <span class='numCir' style='background-color:#fac400;''>" +arr[j]+ "</span>";
+                }
+                else if(10<arr[j] && arr[j] < 21) {
+                    document.getElementById('lottoPrint').innerHTML +=" <span class='numCir' style='background-color:#69c8f2;'>" +arr[j]+ "</span>";
+                }
+                else if(20<arr[j] && arr[j] < 31) {
+                    document.getElementById('lottoPrint').innerHTML +=" <span class='numCir' style='background-color:#ff7272;'>" +arr[j]+ "</span>";
+                }
+                else if(30<arr[j] && arr[j] < 41) {
+                    document.getElementById('lottoPrint').innerHTML +=" <span class='numCir' style='background-color:#aaaaaa;'>" +arr[j]+ "</span>";
+                }
+                else if(40<arr[j] && arr[j] < 46) {
+                    document.getElementById('lottoPrint').innerHTML +=" <span class='numCir' style='background-color:#b0d840;'>" +arr[j]+ "</span>";
+                }
+            }
+        document.getElementById('lottoPrint').innerHTML +="<br><br>";
 
+        }
+        
     });
 
-    form2.addEventListener('click', function () {
+    form2.addEventListener('submit', function () {
         event.preventDefault();
+        document.getElementById('numPrint').innerHTML = "";
+        document.getElementById("Box2").style.display = 'inline-block';
+
 
         const min = document.querySelector('input[name="NrangeStart"]').value;
         const max = document.querySelector('input[name="NrangeEnd"]').value;
         const drawNum = document.querySelector('input[name="Nsetting"]').value;
         console.log('CLk N');
-
-        document.getElementById('numPrint').innerHTML = draw(max ,drawNum, min);   
+        arr = draw(max ,drawNum, min);  
+        for(i=0; i < arr.length; i++)
+        document.getElementById('numPrint').innerHTML += '[ ' + arr[i] + '   ] ' ;   
     });
     
-
-
 
 
 
@@ -84,6 +167,7 @@
         }
         SelectionSort(arr);
         return arr;
+        
     }
 
     function SelectionSort( arr) {
