@@ -18,14 +18,14 @@ body {
 
 
 .btn {
-    background: rgb(26, 26, 138);
-    color: white;
-    border: none;
+    background: rgb(26, 26, 138) !important;
+    color: white !important;
+    border: none !important;
 }
 .inputBtn {
-    background: rgb(26, 26, 138);
-    color: white;
-    border: none;
+    background: rgb(26, 26, 138) !important;
+    color: white !important;
+    border: none !important;
 }
 
 body {
