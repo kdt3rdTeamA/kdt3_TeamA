@@ -34,19 +34,10 @@ body {
 }
 
 .inputBtn{
-<<<<<<< HEAD
-    background: rgb(70, 0, 182);
-    color: white;
-    border: solid 4px white;
-    /* text-shadow: -1px 0 white, 0 1px white, 1px 0  white, 0 -1px white; */
-
-=======
     background: rgb(70, 0, 182) !important;
     color: red !important;
     border: solid 4px white !important;
     text-shadow: -1px 0 white, 0 1px white, 1px 0  white, 0 -1px white !important;
->>>>>>> 12432166db7aaad99c72283a403504193bc5836e
-    
 }
 
 body {

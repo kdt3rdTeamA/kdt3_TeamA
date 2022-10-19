@@ -30,7 +30,15 @@ body {
   background-color: #65d8e8;
 }
 
-<<<<<<< HEAD
+.todoContainer,
+.todoLogo {
+    color: white !important;
+    border-color: white !important;
+}
+
+.todoContainer {
+    background-color: #65d8e8 !important;
+}
 .cloud {
   width: 150px;
   height: 100px;
@@ -101,15 +109,3 @@ body {
       opacity: 1;
   }
 }
-
-=======
-.todoContainer,
-.todoLogo {
-    color: white !important;
-    border-color: white !important;
-}
-
-.todoContainer {
-    background-color: #65d8e8 !important;
-}
->>>>>>> 12432166db7aaad99c72283a403504193bc5836e
