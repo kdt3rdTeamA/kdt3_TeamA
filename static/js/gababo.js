@@ -26,6 +26,7 @@ let switiching = setInterval(function() {
 btn.on('click', function() {
     clearInterval(switiching);
     btn.attr('disabled',true);
+    resetBtn.attr('disabled', false);
     // computer result section
     let randomResult = Math.floor(Math.random() * 3 + 1);
     let userResultScore;
@@ -94,6 +95,7 @@ btn.on('click', function() {
 
 resetBtn.on('click', function() {
     btn.attr('disabled', false);
+    resetBtn.attr('disabled', true);
     switiching = setInterval(function() {
         let randomResult = Math.floor(Math.random() * 3 + 1);
         if (randomResult == 1) {
@@ -105,6 +107,6 @@ resetBtn.on('click', function() {
         else {
             comResult.text('🤚');
         }
-    }, 100);
+    }, 120);
 })
 

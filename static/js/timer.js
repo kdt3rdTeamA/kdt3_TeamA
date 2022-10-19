@@ -1,7 +1,9 @@
+
     const form= document.querySelector('form');
     form.addEventListener('submit', function (event) {
         console.log('submit');
         event.preventDefault();
+
             
         const daysIp = document.querySelector('input[name="days"]').value;
         const hoursIp = document.querySelector('input[name="hours"]').value;
