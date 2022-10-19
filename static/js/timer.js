@@ -1,15 +1,17 @@
-const form= document.querySelector('form');
-form.addEventListener('submit', function (event) {
-    console.log('submit');
-            event.preventDefault();
+
+    const form= document.querySelector('form');
+    form.addEventListener('submit', function (event) {
+        console.log('submit');
+        event.preventDefault();
+
             
-            const daysIp = document.querySelector('input[name="days"]').value;
-            const hoursIp = document.querySelector('input[name="hours"]').value;
-            const minutesIp = document.querySelector('input[name="minutes"]').value;
-            const secondsIp = document.querySelector('input[name="seconds"]').value;
+        const daysIp = document.querySelector('input[name="days"]').value;
+        const hoursIp = document.querySelector('input[name="hours"]').value;
+        const minutesIp = document.querySelector('input[name="minutes"]').value;
+        const secondsIp = document.querySelector('input[name="seconds"]').value;
 
             strat(secondsIp, minutesIp, hoursIp, daysIp);
-        });
+    });
 
     function strat(secIp, minIp, hrIp, dayIp){
         var time = parseInt(secIp) + parseInt(minIp)*60 + parseInt(hrIp)*3600 + parseInt(dayIp)*3600*24;

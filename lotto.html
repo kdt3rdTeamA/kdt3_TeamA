@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lotto</title>
+    <style>
+    body{
+        background-image: linear-gradient(
+            rgba(255,255,255, 0.4),
+            rgba(255,255,255, 0.4)
+            ), url("https://mylottokenya.co.ke/static/images/kenya-lotto/lotto-logo.png"),
+             url(http://imagescdn.gettyimagesbank.com/500/201606/a10504489.jpg) ;
+         background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 30%;
+
+
+    }
+    #Box1 {
+        display: none;
+        margin: 0 10%;
+        background-color: rgba(252, 238, 220, 0.8);
+        border: 1px solid black;
+        padding: 2% 10%;
+        font-size: 20px;
+    }
+    #Box2 {
+        display: none;
+        margin: 0 10%;
+        background-color: rgba(200, 238, 220, 0.8);
+        border: 1px solid black;
+        padding: 2% 10%;
+        font-size: 20px;
+    }
+    .numCir{
+        width: 40px;
+        height: 40px;
+        display: inline-block;        
+        padding: 8px 4px 0;;
+        border-radius: 50%;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        /* vertical-align: middle; */
+
+    }
+    form{
+        margin-top: 10%;
+        text-align: center;
+        align-items: center;
+    }
+    input{
+    text-align: right;
+    }
+    .subm{
+        border-radius: 50%;
+        height: 50px;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="imglotto"></div>
+    <form id="lottoDraw">
+        <h2>Lotto numbers draw!</h2>
+
+        <label for="lotto">How many gmaes do you want?</label>
+        <input name="lotto" type="number" min="0" placeholder="Input number">
+        <input class="subm" type="submit" value="Draw!">
+        <hr>
+        <div id="Box1">
+            <span id="lottoLinePrint"><span id="lottoPrint"></span></span>
+         </div>
+    </form>   
+<!-- </div> -->
+
+    <form id="numDraw">
+        <h2></h2>
+
+        <label for="NrangeStart">least number</label>
+        <input name="NrangeStart" type="number" value="1">
+        <label for="NrangeEnd">Maximum number</label>
+        <input name="NrangeEnd" type="number" value="5">
+        <label for="Nsetting">set draw numbers</label>
+        <input name="Nsetting" type="number" value="4">
+        <!-- <label for="Nignor">제외할수</label>
+        <input name="Nignor" type="number" min="0" value1="9" value2="12"> -->
+        <input type="submit"class="subm" value="Draw!">
+        <hr>
+        <div id="Box2">
+            <span id="numPrint"></span>
+        </div>
+    </form>
+    
+<!-- 레이아웃 요소 기능 순 -->
+
+    <script>
+    const form1= document.querySelector('#lottoDraw');
+    const form2= document.querySelector('#numDraw');
+    var arr=[];
+    
+    form1.addEventListener('submit', function () {
+        event.preventDefault();
+        document.getElementById('lottoPrint').innerHTML = "";
+        document.getElementById("Box1").style.display = 'inline-block';
+
+
+        const lines = document.querySelector('input[name="lotto"]').value;
+        console.log('CLk L');
+
+        for(var i=0; i<lines; i++){
+        arr=draw(45, 6, 1);
+        document.getElementById('lottoPrint').innerHTML += (i+1)+' line';
+            for(var j=0; j<arr.length; j++){
+                if(0<arr[j] && arr[j] < 11){
+                    document.getElementById('lottoPrint').innerHTML +=  " <span class='numCir' style='background-color:#fac400;''>" +arr[j]+ "</span>";
+                }
+                else if(10<arr[j] && arr[j] < 21) {
+                    document.getElementById('lottoPrint').innerHTML +=" <span class='numCir' style='background-color:#69c8f2;'>" +arr[j]+ "</span>";
+                }
+                else if(20<arr[j] && arr[j] < 31) {
+                    document.getElementById('lottoPrint').innerHTML +=" <span class='numCir' style='background-color:#ff7272;'>" +arr[j]+ "</span>";
+                }
+                else if(30<arr[j] && arr[j] < 41) {
+                    document.getElementById('lottoPrint').innerHTML +=" <span class='numCir' style='background-color:#aaaaaa;'>" +arr[j]+ "</span>";
+                }
+                else if(40<arr[j] && arr[j] < 46) {
+                    document.getElementById('lottoPrint').innerHTML +=" <span class='numCir' style='background-color:#b0d840;'>" +arr[j]+ "</span>";
+                }
+            }
+        document.getElementById('lottoPrint').innerHTML +="<br><br>";
+
+        }
+        
+    });
+
+    form2.addEventListener('submit', function () {
+        event.preventDefault();
+        document.getElementById('numPrint').innerHTML = "";
+        document.getElementById("Box2").style.display = 'inline-block';
+
+
+        const min = document.querySelector('input[name="NrangeStart"]').value;
+        const max = document.querySelector('input[name="NrangeEnd"]').value;
+        const drawNum = document.querySelector('input[name="Nsetting"]').value;
+        console.log('CLk N');
+        arr = draw(max ,drawNum, min);  
+        for(i=0; i < arr.length; i++)
+        document.getElementById('numPrint').innerHTML += '[ ' + arr[i] + '   ] ' ;   
+    });
+    
+
+
+
+
+        
+    function draw(max, draw, min){
+        var arr=[max];
+        for (i = 0; i < draw; i++) {
+            arr[i] = (Math.floor(Math.random()*parseInt(max-min+1)+parseInt(min-1)+1));
+            // arr[i] = (Math.floor(Math.random()*max)+1);
+            for (var j = 0; j < i; j++) { //중복값 없게
+                if (arr[i] === arr[j]) i--;
+            }
+        }
+        SelectionSort(arr);
+        return arr;
+        
+    }
+
+    function SelectionSort( arr) {
+        for (var i = 0; i < arr.length-1 ; i++) {
+            var min = i;
+            for (var j = i + 1; j < arr.length+1 ;j++) {
+                if (arr[j] < arr[min]) min = j;
+            }
+            var temp = arr[i];
+            arr[i] = arr[min];
+            arr[min] = temp;
+        }
+    }
+    </script>
+</body>
+</html>
