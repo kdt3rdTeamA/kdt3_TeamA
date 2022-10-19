@@ -32,15 +32,20 @@
     <%- include('./sideBarRe.ejs') %>
     <%- include('./todo.ejs') %>
     <h1 class="title">Pomodoro</h1>
+    <img class="backImg" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/1200px-Paris_Saint-Germain_F.C..svg.png">
+
     <p class="alert-section"></p>
-    <h1 class="timer">
-        <span class="minute">0</span>
-        <span class="col">:</span>
-        <span class="second">0</span>
-    </h1>
-    <div class="btn-section">
-        <button class="btn start">Start</button>
-        <button class="btn reset">End</button>
+
+    <div class="time">
+        <h1 class="timer">
+            <span class="minute">0</span>
+            <span class="col">:</span>
+            <span class="second">0</span>
+        </h1>
+        <div class="btn-section">
+            <button class="btn start">Start</button>
+            <button class="btn reset">End</button>
+        </div>
     </div>
     <script src="/static/js/pomodoro.js"></script>
     <script src="/static/js/todo.js"></script>
