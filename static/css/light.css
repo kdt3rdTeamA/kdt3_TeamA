@@ -18,3 +18,15 @@ body {
         transform: rotate(360deg);
     }
 }
+
+.sideBar {
+    background-color: rgb(255, 253, 163);
+    border: 0px;
+    color: black;
+}
+.offcanvas {
+    background-color: rgb(255, 253, 163);
+}
+.dropdown-menu {
+    background-color: rgb(255, 254, 204);
+}

@@ -27,3 +27,18 @@ body {
     color: white;
     border: none;
 }
+
+body {
+    text-shadow: none;
+}
+.sideBar {
+    background-color: rgb(50, 49, 56);
+    border: 0px;
+    color: white;
+}
+.offcanvas {
+    background-color: rgb(151, 150, 154);
+}
+.dropdown-menu {
+    background-color: rgb(197, 194, 194);
+}
