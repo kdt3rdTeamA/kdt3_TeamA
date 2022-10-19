@@ -35,9 +35,9 @@ body {
 
 .inputBtn{
     background: rgb(70, 0, 182);
-    color: red;
+    color: white;
     border: solid 4px white;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0  white, 0 -1px white;
+    /* text-shadow: -1px 0 white, 0 1px white, 1px 0  white, 0 -1px white; */
 
     
 }
