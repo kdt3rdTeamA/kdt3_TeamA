@@ -132,3 +132,7 @@ app.get('/sw_psg', function(req, res) {
 app.get('/gababo', function(req, res) {
     res.render('gababo');
 })
+
+app.get('/todo', function(req, res) {
+    res.render('todo');
+})
