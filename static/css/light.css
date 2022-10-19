@@ -3,10 +3,10 @@ body {
 }
 
 .btn {
-    background:  rgb(255, 253, 163);
+    background:  rgb(255, 253, 163) !important;
 }
 .inputBtn {
-    background:  rgb(255, 253, 163);
+    background:  rgb(255, 253, 163) !important;
 }
 
 .sun {
@@ -30,3 +30,10 @@ body {
 .dropdown-menu {
     background-color: rgb(255, 254, 204);
 }
+
+.todoContainer,
+.todoLogo {
+    color: black !important;
+    border-color: black !important;
+}
+
