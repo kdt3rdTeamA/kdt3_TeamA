@@ -10,7 +10,7 @@ todoBtn.on('click', function(e){
     e.preventDefault();
     let val = todoInput.val();
     if (val !== ''){
-        let elem = $("<li class='todoLi'></li><br>").text(val);
+        let elem = $("<li class='todoLi'></li>").text(val);
         elem.append("<button class='removeBtn'>X</button>");
         todoList.append(elem);
         todoInput.val("");
