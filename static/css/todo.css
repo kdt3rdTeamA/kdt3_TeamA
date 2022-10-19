@@ -13,6 +13,24 @@
     display: none !important;
 }
 
+.todoOff {
+    position: relative;
+    right: 40%;
+    top: 10px;
+    color: inherit;
+    background-color: inherit;
+    border: none;
+    font-weight: bold;
+    /* transform: translateX(-100%); */
+    
+}
+
+.removeBtn {
+    color: inherit;
+    background-color: inherit;
+    border: none;
+    font-weight: bold;
+}
 
 .todoContainer {
     background-color: inherit;
@@ -37,7 +55,7 @@
 
 .todoLi {
     list-style-type: none;
-
+    width: 80%;
 }
 
 .todoTop {
@@ -46,4 +64,21 @@
 
 .todoMid {
     height: 75%;
+}
+
+.todoInput {
+    width: 80%;
+    height: auto;
+    font-size: 16px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+}
+
+.todoBtn {
+    color: inherit;
+    background-color: inherit;
+    border: 1px solid;
+    border-radius: 15px;
+    font-weight: bold;
 }
