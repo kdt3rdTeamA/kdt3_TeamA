@@ -18,14 +18,14 @@ body {
 
 
 .btn {
-    background: yellow;
-    color: red;
-    border: none;
+    background: yellow !important;
+    color: red !important;
+    border: none !important;
 }
 .inputBtn {
-    background: yellow;
-    color: red;
-    border: none;
+    background: yellow !important;
+    color: red !important;
+    border: none !important;
 }
 
 .sideBar {
@@ -38,4 +38,14 @@ body {
 }
 .dropdown-menu {
     background-color: rgb(255, 156, 156);
+}
+
+.todoContainer,
+.todoLogo {
+    color: yellow !important;
+    border-color: yellow !important;
+}
+
+.todoContainer {
+    background-color: red !important;
 }

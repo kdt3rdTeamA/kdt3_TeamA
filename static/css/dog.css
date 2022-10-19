@@ -5,14 +5,14 @@ body {
 }
 
 .btn {
-    background: rgb(129, 90, 32);
-    color: white;
-    border-color: white;
+    background: rgb(129, 90, 32) !important;
+    color: white !important;
+    border-color: white !important;
 }
 .inputBtn {
-    background: rgb(129, 90, 32);
-    color: white;
-    border-color: white;
+    background: rgb(129, 90, 32) !important;
+    color: white !important;
+    border-color: white !important;
 }
 
 .dog {
@@ -54,3 +54,14 @@ body {
 .dropdown-menu {
     background-color: #ffccae;
 }
+
+.todoContainer,
+.todoLogo {
+    color: rgb(129, 90, 32) !important;
+    border-color: rgb(129, 90, 32) !important;
+}
+
+.todoContainer {
+    background-color: #c0a18d !important;
+}
+

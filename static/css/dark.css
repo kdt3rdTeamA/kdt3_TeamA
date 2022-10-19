@@ -4,9 +4,9 @@ body {
 }
 
 .btn {
-    color: white;
-    background: black;
-    border-color: white;
+    color: white !important;
+    background: black !important;
+    border-color: white !important;
 }
 
 .moon {
