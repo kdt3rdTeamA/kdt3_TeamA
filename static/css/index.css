@@ -4,11 +4,23 @@ body{
     color: white;
     text-align: center;
     font-family: 'Jua', sans-serif;
+    height: 100vh;
 }
 
 a {
     text-decoration: none;
     /* color:#fff; */
+}
+
+header{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section {
+    height: max-content;
 }
 
 .dp-none  {
@@ -36,6 +48,19 @@ i {
 
 .timeSection {
     margin-right: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.miniGames > h3 {
+    font-size: 35px;
+}
+
+.games {
+    border: 2px solid white;
+    padding: 5px 30px;
+    margin-top: 5%;
 }
 
 .timeSection .list {
@@ -45,14 +70,12 @@ i {
 }
 
 .timeSection .list li {
-    display: inline-block;
     padding: 15px 0;
     cursor: pointer;
     margin: 0 auto;
 }
 
 .themeList li {
-    display: inline-block;
     font-size: 30px;
     list-style-type: none;
     padding: 15px 0;
@@ -60,7 +83,6 @@ i {
 }
 
 .Theme ul {
-    display: inline-block;
     font-size: 30px;
     list-style-type: none;
     padding: 15px 0;
