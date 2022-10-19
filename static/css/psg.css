@@ -25,21 +25,19 @@ body {
 
 
 .btn {
-    background: rgb(70, 0, 182);
-    color: red;
-    border: solid 4px white;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0  white, 0 -1px white;
+    background: rgb(70, 0, 182) !important;
+    color: red !important;
+    border: solid 4px white !important;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0  white, 0 -1px white !important;
 
     
 }
 
 .inputBtn{
-    background: rgb(70, 0, 182);
-    color: white;
-    border: solid 4px white;
-    /* text-shadow: -1px 0 white, 0 1px white, 1px 0  white, 0 -1px white; */
-
-    
+    background: rgb(70, 0, 182) !important;
+    color: red !important;
+    border: solid 4px white !important;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0  white, 0 -1px white !important;
 }
 
 body {
@@ -56,4 +54,15 @@ body {
 }
 .dropdown-menu {
     background-color: rgb(152, 160, 248);
+}
+
+.todoContainer,
+.todoLogo {
+    background: rgb(70, 0, 182) !important;
+    color: white !important;
+    border: solid 4px white !important;
+}
+
+.todoContainer {
+    background: rgb(70, 0, 182) !important;
 }

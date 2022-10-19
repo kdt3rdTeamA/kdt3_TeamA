@@ -7,14 +7,14 @@ body {
 }
 
 .btn {
-    background: rgb(76, 78, 170);
-    color: rgb(19, 20, 75);
-    border: none;
+    background: rgb(76, 78, 170) !important;
+    color: rgb(19, 20, 75) !important;
+    border: none !important;
 }
 .inputBtn {
-    background: rgb(76, 78, 170);
-    color: rgb(19, 20, 75);
-    border: none;
+    background: rgb(76, 78, 170) !important;
+    color: rgb(19, 20, 75) !important;
+    border: none !important;
 }
 
 .sideBar {
@@ -37,4 +37,14 @@ body {
 }
 .dropdown-menu {
     background-color: #88a4d7
+}
+
+.todoContainer,
+.todoLogo {
+    color: rgb(19, 20, 75) !important;
+    border-color: rgb(19, 20, 75) !important;
+}
+
+.todoContainer {
+    background-color: rgb(76, 78, 170) !important;
 }
