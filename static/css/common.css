@@ -19,7 +19,7 @@ btn
 }
 
 .btn {
-    background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255); 
     font-size: 30px;
     border: solid 2px black;
     padding: 5px 20px;

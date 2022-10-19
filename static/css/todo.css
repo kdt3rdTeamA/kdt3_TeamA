@@ -1,0 +1,84 @@
+
+.todoLogo {
+    position: fixed;
+    top: 3%;
+    left: 90%;
+    border: 2px solid white;
+    border-radius: 33%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.todoOn {
+    display: none !important;
+}
+
+.todoOff {
+    position: relative;
+    right: 40%;
+    top: 10px;
+    color: inherit;
+    background-color: inherit;
+    border: none;
+    font-weight: bold;
+    /* transform: translateX(-100%); */
+    
+}
+
+.removeBtn {
+    color: inherit;
+    background-color: inherit;
+    border: none;
+    font-weight: bold;
+}
+
+.todoContainer {
+    background-color: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 75%;
+    width: 25%;
+    height: max-content;
+    z-index: 1000;
+    border: 2px solid white;
+}
+
+.todoList {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todoLi {
+    list-style-type: none;
+    width: 80%;
+}
+
+.todoTop {
+    height: 25%;
+}
+
+.todoMid {
+    height: 75%;
+}
+
+.todoInput {
+    width: 80%;
+    height: auto;
+    font-size: 16px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+}
+
+.todoBtn {
+    color: inherit;
+    background-color: inherit;
+    border: 1px solid;
+    border-radius: 15px;
+    font-weight: bold;
+}

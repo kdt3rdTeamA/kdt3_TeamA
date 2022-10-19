@@ -5,12 +5,63 @@ body {
 }
 
 .btn {
-    background: rgb(129, 90, 32);
-    color: white;
-    border-color: white;
+    background: rgb(129, 90, 32) !important;
+    color: white !important;
+    border-color: white !important;
 }
 .inputBtn {
-    background: rgb(129, 90, 32);
-    color: white;
-    border-color: white;
+    background: rgb(129, 90, 32) !important;
+    color: white !important;
+    border-color: white !important;
 }
+
+.dog {
+    display: inline-block;
+    
+}
+
+.dog {
+    animation: doridori 3s linear infinite;
+}
+
+@keyframes doridori {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(25deg);
+    }
+    50% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(-25deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+    
+}
+
+.sideBar {
+    background-color: #F8F3F0;
+    border: 0px;
+    color: rgb(129, 90, 32);
+}
+.offcanvas {
+    background-color: #F8F3F0;
+}
+.dropdown-menu {
+    background-color: #ffccae;
+}
+
+.todoContainer,
+.todoLogo {
+    color: rgb(129, 90, 32) !important;
+    border-color: rgb(129, 90, 32) !important;
+}
+
+.todoContainer {
+    background-color: #c0a18d !important;
+}
+

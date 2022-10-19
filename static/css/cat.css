@@ -15,10 +15,11 @@ body {
   }
   
   .btn {
-    border: solid 4px rgb(154, 196, 212);
+    border: solid 4px rgb(244, 191, 191) !important;
+    color: rgb(190, 147, 147) !important;
   }
   .inputBtn{
-    border: solid 4px rgb(154, 196, 212);
+    border: solid 4px rgb(154, 196, 212) !important;
 
   }
   
@@ -90,3 +91,25 @@ body {
       );
     }
   }
+
+.sideBar {
+    background-color: white;
+    border: 0px;
+    color: rgb(244, 191, 191);
+}
+.offcanvas {
+    background-color: rgb(244, 191, 191);
+}
+.dropdown-menu {
+    background-color: rgb(255, 172, 172);
+}
+
+.todoContainer,
+.todoLogo {
+    color: rgb(190, 147, 147) !important;
+    border-color: rgb(190, 147, 147) !important;
+}
+
+.todoContainer {
+    background-color: rgb(238, 236, 236) !important;
+}

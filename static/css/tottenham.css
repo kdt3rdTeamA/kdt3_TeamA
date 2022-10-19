@@ -18,12 +18,27 @@ body {
 
 
 .btn {
-    background: rgb(26, 26, 138);
-    color: white;
-    border: none;
+    background: rgb(26, 26, 138) !important;
+    color: white !important;
+    border: none !important;
 }
 .inputBtn {
-    background: rgb(26, 26, 138);
+    background: rgb(26, 26, 138) !important;
+    color: white !important;
+    border: none !important;
+}
+
+body {
+    text-shadow: none;
+}
+.sideBar {
+    background-color: rgb(50, 49, 56);
+    border: 0px;
     color: white;
-    border: none;
+}
+.offcanvas {
+    background-color: rgb(151, 150, 154);
+}
+.dropdown-menu {
+    background-color: rgb(197, 194, 194);
 }

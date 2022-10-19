@@ -107,3 +107,4 @@ resetBtn.on('click', function() {
         }
     }, 100);
 })
+

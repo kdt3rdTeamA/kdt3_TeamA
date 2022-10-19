@@ -9,6 +9,7 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: -5;
+    opacity: 0.5;
 }
 
 .timer span{
@@ -17,12 +18,34 @@ body {
 
 
 .btn {
-    background: yellow;
-    color: red;
-    border: none;
+    background: yellow !important;
+    color: red !important;
+    border: none !important;
 }
 .inputBtn {
-    background: yellow;
-    color: red;
-    border: none;
+    background: yellow !important;
+    color: red !important;
+    border: none !important;
+}
+
+.sideBar {
+    background-color: red;
+    border: 0px;
+    color: yellow;
+}
+.offcanvas {
+    background-color: rgb(255, 95, 95);
+}
+.dropdown-menu {
+    background-color: rgb(255, 156, 156);
+}
+
+.todoContainer,
+.todoLogo {
+    color: yellow !important;
+    border-color: yellow !important;
+}
+
+.todoContainer {
+    background-color: red !important;
 }

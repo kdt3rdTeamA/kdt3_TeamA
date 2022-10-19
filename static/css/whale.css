@@ -1,21 +1,50 @@
 body {
     background-image: url(https://c4.wallpaperflare.com/wallpaper/472/319/661/anime-original-fantasy-whale-hd-wallpaper-preview.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     color: rgb(19, 20, 75);
-    text-shadow: -2px 0 rgb(255, 255, 255) , 0 2px rgb(255, 255, 255), 2px 0 rgb(255, 255, 255), 0 -2px rgb(255, 255, 255);
+    background-color:rgb(35, 36, 61);
 }
 
 .btn {
-    background: rgb(76, 78, 170);
-    color: rgb(19, 20, 75);
-    border: none;
-    text-shadow: -1px 0 rgb(255, 255, 255) , 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
-
-
+    background: rgb(76, 78, 170) !important;
+    color: rgb(19, 20, 75) !important;
+    border: none !important;
 }
 .inputBtn {
-    background: rgb(76, 78, 170);
-    color: rgb(19, 20, 75);
-    border: none;
-    text-shadow: -1px 0 rgb(255, 255, 255) , 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);    
+    background: rgb(76, 78, 170) !important;
+    color: rgb(19, 20, 75) !important;
+    border: none !important;
+}
+
+.sideBar {
+    background-color: black;
+    border: 0px;
+    color: white;
+    border-radius: 15%;
+}
+body {
+    text-shadow: none;
+}
+.title, .timer {
+    -webkit-text-stroke: 0.5px white;
+}
+.btn {
+    color: white;
+}
+.offcanvas {
+    background-color: #5679c0
+}
+.dropdown-menu {
+    background-color: #88a4d7
+}
+
+.todoContainer,
+.todoLogo {
+    color: rgb(19, 20, 75) !important;
+    border-color: rgb(19, 20, 75) !important;
+}
+
+.todoContainer {
+    background-color: rgb(76, 78, 170) !important;
 }

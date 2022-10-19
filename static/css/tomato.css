@@ -4,13 +4,51 @@ body {
 }
 .btn {
     color: tomato;
-    border-color: white;
+    border-color: white !important;
 }
 .inputBtn {
     color: tomato;
     border-color: white;
 }
 
+.tomatos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.tomato:nth-child(odd) {
+    animation:float 2s linear infinite alternate;  
+}
+
+.tomato:nth-child(even) {
+    animation:float 2s linear infinite alternate 2s;  
+}
+
+
+
+.tomato{
+    font-size: 40px;
+}
+@keyframes float {
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+.sideBar {
+    background-color: tomato;
+    border: 0px;
+    color: white;
+}
+.offcanvas {
+    background-color: tomato;
+    color: white;
+}
+.dropdown-menu {
+    background-color: rgb(252, 180, 167);
+    color: white;
+}
 
 
 

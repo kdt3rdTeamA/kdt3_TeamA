@@ -54,7 +54,7 @@ app.get('/pomodoro_psg', function(req, res) {
 
 // timer render section
 app.get('/timer_dark', function(req, res) {
-    res.render('timer');
+    res.render('timer_dark');
 })
 app.get('/timer_light', function(req, res) {
     res.render('timer_light');
@@ -131,4 +131,8 @@ app.get('/sw_psg', function(req, res) {
 // gababo
 app.get('/gababo', function(req, res) {
     res.render('gababo');
+})
+
+app.get('/todo', function(req, res) {
+    res.render('todo');
 })

@@ -6,12 +6,35 @@ body {
 }
 
 .btn {
-    color: white;
-    background: greenyellow;
-    border: none;
+    color: white !important;
+    background: greenyellow !important;
+    border: none !important;
 }
 .inputBtn {
-    color: white;
-    background: greenyellow;
-    border: none;
+    color: white !important;
+    background: greenyellow !important;
+    border: none !important;
 }
+
+.sideBar {
+    background-color: #DAF5FF;
+    border: 0px;
+    color: #5FA312;
+}
+.offcanvas {
+    background-color: #DAF5FF;
+}
+.dropdown-menu {
+    background-color: #89daf8;
+}
+
+.todoContainer,
+.todoLogo {
+    color: greenyellow !important;
+    border-color: greenyellow !important;
+}
+
+.todoContainer {
+    background-color: #5FA312 !important;
+}
+

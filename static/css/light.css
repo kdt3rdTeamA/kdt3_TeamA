@@ -3,8 +3,37 @@ body {
 }
 
 .btn {
-    background:  rgb(255, 253, 163);
+    background:  rgb(255, 253, 163) !important;
 }
 .inputBtn {
-    background:  rgb(255, 253, 163);
+    background:  rgb(255, 253, 163) !important;
 }
+
+.sun {
+    display: inline-block;
+    animation: rotate_image 5s linear infinite;transform-origin: 50% 50%;}
+
+@keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.sideBar {
+    background-color: rgb(255, 253, 163);
+    border: 0px;
+    color: black;
+}
+.offcanvas {
+    background-color: rgb(255, 253, 163);
+}
+.dropdown-menu {
+    background-color: rgb(255, 254, 204);
+}
+
+.todoContainer,
+.todoLogo {
+    color: black !important;
+    border-color: black !important;
+}
+

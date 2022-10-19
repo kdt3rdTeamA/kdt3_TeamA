@@ -4,7 +4,17 @@ body {
 }
 
 .btn {
-    color: white;
-    background: black;
-    border-color: white;
+    color: white !important;
+    background: black !important;
+    border-color: white !important;
+}
+
+.moon {
+    display: inline-block;
+    animation: rotate_image 5s linear infinite;transform-origin: 50% 50%;}
+
+@keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
 }
