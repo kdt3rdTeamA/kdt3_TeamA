@@ -5,11 +5,12 @@ let todoList = $('.todoList');
 
 
 
+// todo list function
 todoBtn.on('click', function(e){
     e.preventDefault();
     let val = todoInput.val();
     if (val !== ''){
-        let elem = $("<li></li>").text(val);
+        let elem = $("<li class='todoLi'></li><br>").text(val);
         elem.append("<button class='removeBtn'>X</button>");
         todoList.append(elem);
         todoInput.val("");
@@ -17,4 +18,21 @@ todoBtn.on('click', function(e){
             $(this).parent().remove();
         });
     }
+});
+
+// sidebar function
+let todoLogo = $('.todoLogo');
+
+todoLogo.on('click', function () {
+    let todoCon = $('.todoContainer');
+    todoCon.removeClass('todoOn');
+    todoLogo.addClass('todoOn');
+});
+
+let todoOff = $('.todoOff');
+
+todoOff.on('click', function () {
+    let todoCon = $('.todoContainer');
+    todoCon.addClass('todoOn');
+    todoLogo.removeClass('todoOn');
 });
