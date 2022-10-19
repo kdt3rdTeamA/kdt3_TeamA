@@ -1,0 +1,49 @@
+
+.todoLogo {
+    position: fixed;
+    top: 3%;
+    left: 90%;
+    border: 2px solid white;
+    border-radius: 33%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.todoOn {
+    display: none !important;
+}
+
+
+.todoContainer {
+    background-color: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 75%;
+    width: 25%;
+    height: max-content;
+    z-index: 1000;
+    border: 2px solid white;
+}
+
+.todoList {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todoLi {
+    list-style-type: none;
+
+}
+
+.todoTop {
+    height: 25%;
+}
+
+.todoMid {
+    height: 75%;
+}
