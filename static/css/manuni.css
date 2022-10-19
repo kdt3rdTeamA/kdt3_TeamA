@@ -27,3 +27,15 @@ body {
     color: red;
     border: none;
 }
+
+.sideBar {
+    background-color: red;
+    border: 0px;
+    color: yellow;
+}
+.offcanvas {
+    background-color: rgb(255, 95, 95);
+}
+.dropdown-menu {
+    background-color: rgb(255, 156, 156);
+}

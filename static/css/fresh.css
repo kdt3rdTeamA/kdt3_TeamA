@@ -15,3 +15,15 @@ body {
     background: greenyellow;
     border: none;
 }
+
+.sideBar {
+    background-color: #DAF5FF;
+    border: 0px;
+    color: #5FA312;
+}
+.offcanvas {
+    background-color: #DAF5FF;
+}
+.dropdown-menu {
+    background-color: #89daf8;
+}
