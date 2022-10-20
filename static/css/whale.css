@@ -42,7 +42,8 @@ body {
 .todoContainer,
 .todoLogo {
     color: rgb(19, 20, 75) !important;
-    border-color: rgb(19, 20, 75) !important;
+    -webkit-text-stroke: 0.5px white !important;
+    -webkit-text-stroke: 0.5px white;
 }
 
 .todoContainer {

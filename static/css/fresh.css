@@ -8,13 +8,14 @@ body {
 .btn {
     color: white !important;
     background: greenyellow !important;
-    border: none !important;
+    border: 1px solid white !important;
 }
 .inputBtn {
     color: white !important;
     background: greenyellow !important;
-    border: none !important;
+    border: 1px solid white !important;
 }
+
 
 .sideBar {
     background-color: #DAF5FF;

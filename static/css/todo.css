@@ -1,8 +1,8 @@
 
 .todoLogo {
-    position: absolute;
+    position: fixed;
     top: 1%;
-    left: 94%;
+    left: 89%;
     border: 2px solid white;
     border-radius: 33%;
     padding: 10px;
@@ -46,6 +46,7 @@
     height: max-content;
     z-index: 1000;
     border: 2px solid white;
+    overflow:auto;
 }
 
 .todoList {

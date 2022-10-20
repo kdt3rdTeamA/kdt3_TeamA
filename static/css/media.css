@@ -3,7 +3,23 @@
 }
 @media screen and (min-width:768px) and (max-width: 1023px) {
 	/* Tablet */
+	.title {
+		font-size: 80px !important;
+	}
+	.todoLogo{
+		left: 85% !important;
+	}
 }
 @media screen and (max-width:767px){ 
 	/* Mobile */
+	.title {
+		font-size: 40px !important;
+	}
+	.timer {
+		font-size: 50px !important;
+	}
+	.todoLogo{
+		font-size: 16px !important;
+		left: 83% !important;
+	}
 }
