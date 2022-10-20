@@ -26,6 +26,13 @@ btn
     border-radius: 15px;
     cursor: pointer;
 }
+.inputBtn{
+    background: rgb(255, 255, 255); 
+    font-size: 30px;
+    border: solid 2px black;
+    border-radius: 15px;
+    cursor: pointer;
+}
 
 .btn:hover {
     transform: translateY(-10%);
