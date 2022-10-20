@@ -1,12 +1,14 @@
 
 .todoLogo {
-    position: fixed;
-    top: 3%;
-    left: 90%;
+    position: absolute;
+    top: 1%;
+    left: 94%;
     border: 2px solid white;
     border-radius: 33%;
     padding: 10px;
     cursor: pointer;
+    font-size: 30px;
+    /* transform: translate(-100%,-100%); */
 }
 
 .todoOn {
@@ -14,15 +16,14 @@
 }
 
 .todoOff {
-    position: relative;
-    right: 40%;
+    position: absolute;
+    left: 2%;
     top: 10px;
     color: inherit;
     background-color: inherit;
     border: none;
     font-weight: bold;
-    /* transform: translateX(-100%); */
-    
+    font-size: 1.5rem;
 }
 
 .removeBtn {
