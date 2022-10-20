@@ -13,8 +13,8 @@ let breakInterval;
 let session = 0;
 // start button function
 startBtn.addEventListener('click', () => {
-    let time = 25 * 60;
-    // let time = 5;
+    // let time = 25 * 60;
+    let time = 5;
     startBtn.disabled = true;
     runInterval = setInterval(() => {
         let min = parseInt(time / 60);
@@ -27,8 +27,8 @@ startBtn.addEventListener('click', () => {
             body.classList.remove('run-mode');
             body.classList.add('break-mode');
             alertSection.innerText = `Break Time!`;
-            time = 5 * 60;
-            // let time = 5;
+            // time = 5 * 60;
+            let time = 5;
             breakInterval = setInterval(() => {
                 let min = parseInt(time / 60);
                 let sec = time % 60;

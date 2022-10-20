@@ -121,3 +121,11 @@ label {
       padding: 0 0;
   }
 }
+
+.bi-list {
+  cursor: pointer;
+}
+
+.dropdown-toggle{
+  cursor: pointer;
+}

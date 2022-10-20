@@ -68,7 +68,7 @@ i {
 
 .timeSection .list {
     list-style-type: none;
-    font-size: 30px;
+    font-size: 26px;
     margin: 0 auto;
 }
 
@@ -90,6 +90,10 @@ i {
     list-style-type: none;
     padding: 15px 0;
     cursor: pointer;
+}
+
+.Theme ul li {
+    padding: 10px 0;
 }
 
 .main{
@@ -147,4 +151,12 @@ span{
     font-size: 12px;
     color: white;
 
+}
+
+.back1,
+.back2,
+.back3,
+.back4,
+.back5 {
+    margin-top: 1rem;
 }
