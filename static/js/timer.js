@@ -1,7 +1,7 @@
-
-    const form= document.querySelector('form');
-    form.addEventListener('submit', function (event) {
-        console.log('submit');
+    // const form= document.querySelector('.timerForm');
+    const clk= document.querySelector('#startClk');
+    clk.addEventListener('click', function (event) {
+        console.log('click');
         event.preventDefault();
 
             
@@ -10,8 +10,10 @@
         const minutesIp = document.querySelector('input[name="minutes"]').value;
         const secondsIp = document.querySelector('input[name="seconds"]').value;
 
-            strat(secondsIp, minutesIp, hoursIp, daysIp);
+        strat(secondsIp, minutesIp, hoursIp, daysIp);
     });
+
+//========================================================================
 
     function strat(secIp, minIp, hrIp, dayIp){
         var time = parseInt(secIp) + parseInt(minIp)*60 + parseInt(hrIp)*3600 + parseInt(dayIp)*3600*24;
@@ -22,8 +24,10 @@
 
         //시작 버튼 비활성화
         startClk.disabled = true;
-        restartClk.disabled = true;
+        document.getElementById("startClk").style.cursor = 'not-allowed';
 
+        restartClk.disabled = true;
+        document.querySelector("#restartClk").style.cursor = 'not-allowed';
         var x = setInterval(function() {
             day= parseInt((time/(60*60*24))%(60*60*24));
             hr= parseInt((time/3600)% 3600%24);
@@ -39,7 +43,6 @@
                 clearInterval(x); //setInterval() 실행을 끝냄
                 startClk.disabled = false;
                 restartClk.disabled = false;
-
                 document.getElementById("demo").innerHTML = "Time Out";
             }
 
@@ -52,7 +55,7 @@
 
                 
                 document.getElementById('restartClk').addEventListener('click', ()=>{
-                    var y = setInterval(function() {
+                        var y= setInterval(function() {
                         startClk.disabled = true;
                         restartClk.disabled = true;
                         
@@ -74,18 +77,26 @@
                             startClk.disabled = false;
                             time = "";
                             document.getElementById("demo").innerHTML = "<strong>Reset !!!</strong>";
+            console.log('y reset');
+
                         });
+            console.log('run y');
+
                     }, 1000);
                 });
             });
             document.getElementById('resetClk').addEventListener('click', ()=>{
                 clearInterval(x);
+                var y;
                 clearInterval(y);
+                document.getElementById("startClk").style.cursor = 'pointer';
+
 
                 startClk.disabled = false;
 
                 time = "";
                 document.getElementById("demo").innerHTML = "<strong>Reset !!!</strong>";
             });
+            console.log('run x');
         }, 1000); //1초 마다 실행
     }

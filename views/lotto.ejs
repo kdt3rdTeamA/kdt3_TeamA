@@ -63,12 +63,12 @@
 </head>
 <body>
     <div class="imglotto"></div>
-    <form id="lottoDraw">
+    <form>
         <h2>Lotto numbers draw!</h2>
 
         <label for="lotto">How many gmaes do you want?</label>
         <input name="lotto" type="number" min="0" placeholder="Input number">
-        <input class="subm" type="submit" value="Draw!">
+        <input class="subm"  id="lottoDraw" type="button" value="Draw!">
         <hr>
         <div id="Box1">
             <span id="lottoLinePrint"><span id="lottoPrint"></span></span>
@@ -76,7 +76,7 @@
     </form>   
 <!-- </div> -->
 
-    <form id="numDraw">
+    <form>
         <h2></h2>
 
         <label for="NrangeStart">least number</label>
@@ -87,7 +87,7 @@
         <input name="Nsetting" type="number" value="4">
         <!-- <label for="Nignor">제외할수</label>
         <input name="Nignor" type="number" min="0" value1="9" value2="12"> -->
-        <input type="submit"class="subm" value="Draw!">
+        <input type="button"  id="numDraw" class="subm" value="Draw!">
         <hr>
         <div id="Box2">
             <span id="numPrint"></span>

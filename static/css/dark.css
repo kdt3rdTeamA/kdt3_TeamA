@@ -8,6 +8,11 @@ body {
     background: black !important;
     border-color: white !important;
 }
+.inputBtn {
+    color: white !important;
+    background: black !important;
+    border-color: white !important;
+}
 
 .moon {
     display: inline-block;
