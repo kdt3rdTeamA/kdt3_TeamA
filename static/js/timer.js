@@ -3,6 +3,7 @@
     clk.addEventListener('click', function (event) {
         console.log('click');
         event.preventDefault();
+
             
         const daysIp = document.querySelector('input[name="days"]').value;
         const hoursIp = document.querySelector('input[name="hours"]').value;
