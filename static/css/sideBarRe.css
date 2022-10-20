@@ -23,7 +23,7 @@ i {
   }
 
   .offcanvas {
-    --bs-offcanvas-width: 200px;
+    --bs-offcanvas-width: 350px;
     --bs-offcanvas-padding-x: 2rem;
     --bs-offcanvas-padding-y: 2rem;
     --bs-body-font-size: 1.3rem;
@@ -33,12 +33,16 @@ i {
   }
 
   .dropdown-toggle {
-  font-size: 20px;
+  font-size: 38px;
 }
 
+.dropdown-item {
+  font-size: 25px;
+  margin: 5px;
+}
 .main {
   text-align: center;
-  font-size: 20px;
+  font-size: 38px;
   text-decoration-line: none;
   text-decoration-color: none;
   color: black;
