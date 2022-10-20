@@ -133,6 +133,6 @@ app.get('/gababo', function(req, res) {
     res.render('gababo');
 })
 
-app.get('/todo', function(req, res) {
-    res.render('todo');
+app.get('/lotto', function(req, res) {
+    res.render('lotto');
 })
