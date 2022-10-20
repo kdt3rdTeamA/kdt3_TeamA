@@ -33,23 +33,39 @@ label {
   padding: 0 0 0 10px;
 }
 
+.dropdown-toggle {
+  font-size: 25px;
+}
+.dropdown-item {
+    font-size: 20px;
+}
+.offcanvas {
+    --bs-offcanvas-width: 300px;
+    --bs-offcanvas-padding-x: 2rem;
+    --bs-offcanvas-padding-y: 2rem;
+    --bs-body-font-size: 1.3rem;
+}
+.main {
+    text-align: center;
+    font-size: 25px;
+    text-decoration-line: none;
+    text-decoration-color: none;
+    color: black;
+    padding: 0 0;
+}
+
 @media screen and (min-width:1024px) {
 	.dropdown-toggle {
     font-size: 32px;
   }
   .dropdown-item {
     font-size: 25px;
-    margin: 5px;
   }
   .offcanvas {
     --bs-offcanvas-width: 350px;
-    --bs-offcanvas-padding-x: 2rem;
-    --bs-offcanvas-padding-y: 2rem;
-    --bs-body-font-size: 1.3rem;
   }
   .dropdown-item {
     font-size: 25px;
-    margin: 5px;
   }
   .main {
     text-align: center;
@@ -73,19 +89,35 @@ label {
       --bs-offcanvas-padding-y: 2rem;
       --bs-body-font-size: 1.3rem;
   }
-  .dropdown-item {
-      color: black;
-      font-size: 25px;
-      margin: 0;
-    }
-
-    .main {
+  .main {
       text-align: center;
       font-size: 25px;
       text-decoration-line: none;
       text-decoration-color: none;
       color: black;
       padding: 0 0;
+  }
+}
+
+@media screen and (max-width:767px){ 
+  .dropdown-toggle {
+    font-size: 13px;
+  }
+
+  .offcanvas {
+      --bs-offcanvas-width: 120px;
+  }
+  .dropdown-item {
+      color: black;
+      font-size: 10px;
     }
 
+  .main {
+      text-align: center;
+      font-size: 13px;
+      text-decoration-line: none;
+      text-decoration-color: none;
+      color: black;
+      padding: 0 0;
+  }
 }
