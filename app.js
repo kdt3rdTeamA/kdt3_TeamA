@@ -136,7 +136,32 @@ app.get('/gababo', function(req, res) {
 app.get('/lotto', function(req, res) {
     res.render('lotto');
 })
+
 // wordle
 app.get('/wordle', function(req, res) {
     res.render('wordle');
+
+//룰렛 
+app.get('/roulette', function(req, res) {
+    res.render('roulette');
+})
+
+app.get('/roulette_bun', function(req, res) {
+    res.render('roulette_bun');
+})
+
+app.get('/roulette_han', function(req, res) {
+    res.render('roulette_han');
+})
+
+app.get('/roulette_il', function(req, res) {
+    res.render('roulette_il');
+})
+
+app.get('/roulette_jung', function(req, res) {
+    res.render('roulette_jung');
+})
+
+app.get('/roulette_yang', function(req, res) {
+    res.render('roulette_yang');
 })
