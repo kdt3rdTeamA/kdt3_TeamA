@@ -4,6 +4,7 @@ body {
   height: 100vh;
   background: url(/static/css/image/backImgMain.jpg) no-repeat center;
   background-size: cover;
+  overflow: hidden;
 }
 
 canvas {
@@ -30,7 +31,6 @@ button:active {
 }
  
 div {
-  width: 380px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@ div {
   position: relative;
 }
 
-div::before {
+.roulette::before {
   content: "";
   position: absolute;
   width: 10px;
