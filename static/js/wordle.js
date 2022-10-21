@@ -7,8 +7,8 @@ let gameOver = false;
 let wordList = ['eject','breed','heavy','sheet','sweet','steam','judge','faint','taste','stool','spare','bitch','block','sharp','young','panel','smile','video','trick','catch','beach','elect','gloom','glide','queen','piano','mouth','enter','fibre','queue','spite','basic','space','range','model','virus','horse','float','asset','torch','trail','utter','shine','donor','grand','glass','clock','shell','angle','elbow','fight','house','cheer','adopt','guess','shout','blame','agree','catch','drive','reply','widen','shake','issue','hurry','spoil','climb','renew','offer','focus','raise','cross','range','learn','going','incur','doubt','match','laugh','drown','flood','react','shine','merge','write','dream','press','limit','voice','cater','spend','throw','shape','teach','exist','award','imply','speed','plant','visit'];
 let ranNum = Math.floor(Math.random() * wordList.length);
 
-let word = `${wordList[ranNum]}`;
-
+let word = `${wordList[ranNum].toUpperCase()}`;
+console.log(word);
 let replayBtn = $('.replay');
 
 window.onload = function () {
@@ -63,6 +63,7 @@ function intialize() {
 
 
         if (!gameOver && row == height) {
+            Swal.fire('Fail!');
             gameOver = true;
             document.getElementById("answer").innerText = word;
         }
@@ -91,6 +92,7 @@ function update() {
 
         if (correct == width) {
             gameOver = true;
+            Swal.fire('Correct!');
         }
 
     }
