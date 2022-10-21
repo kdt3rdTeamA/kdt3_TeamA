@@ -8,7 +8,7 @@ let wordList = ['eject','breed','heavy','sheet','sweet','steam','judge','faint',
 let ranNum = Math.floor(Math.random() * wordList.length);
 
 let word = `${wordList[ranNum].toUpperCase()}`;
-console.log(word);
+// console.log(word);
 let replayBtn = $('.replay');
 
 window.onload = function () {
