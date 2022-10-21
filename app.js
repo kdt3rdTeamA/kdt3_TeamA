@@ -132,7 +132,11 @@ app.get('/sw_psg', function(req, res) {
 app.get('/gababo', function(req, res) {
     res.render('gababo');
 })
-
+// lotto
 app.get('/lotto', function(req, res) {
     res.render('lotto');
+})
+// wordle
+app.get('/wordle', function(req, res) {
+    res.render('wordle');
 })
