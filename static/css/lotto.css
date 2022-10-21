@@ -7,17 +7,17 @@ body{
     /* background-image: url(); */
     background-position: top;
 }
-
-.subTitle{
-    font-size: 5vh;
-    margin: 2vh 0 ;
-}
 .title{
     z-index: 10;
     
     position: relative;
     font-size: 8vh;
 }
+.subTitle{
+    font-size: 5vh;
+    margin: 2vh 0 ;
+}
+
 #printBox1, #printBox2 {
     margin: 5vh 2vw;
     display: none;
