@@ -33,3 +33,6 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
+#restartClk, #resetClk, #pauseClk{
+    cursor: not-allowed;
+}
