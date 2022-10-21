@@ -59,7 +59,9 @@ const rotate = () => {
     $c.style.transform = `rotate(-${rotate}deg)`;
     $c.style.transition = `2s`;
     
-    setTimeout(() => alert(`오늘의 야식은?! ${product[ran]} 어떠신가요?`), 2000);
+    setTimeout(() => alert(
+      `오늘의 야식은?! ${product[ran]} 어떠신가요?`,
+    ), 2000);
     
     
     if (product[ran] =='양식') {
