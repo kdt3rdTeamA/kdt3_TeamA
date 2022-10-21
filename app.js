@@ -140,6 +140,7 @@ app.get('/lotto', function(req, res) {
 // wordle
 app.get('/wordle', function(req, res) {
     res.render('wordle');
+})
 
 //룰렛 
 app.get('/roulette', function(req, res) {

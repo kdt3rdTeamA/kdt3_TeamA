@@ -56,14 +56,23 @@ i {
 }
 
 .miniGames > h3 {
-    font-size: 30px;
-    margin: 0;
+    font-size: 26px;
+    margin: 1% 0 0 0;
 }
 
 .games {
     border: 2px solid white;
     /* padding: 5px 30px; */
-    /* margin-top: 5%; */
+    margin-top: 3%;
+}
+
+.games li {
+    display: inline-block;
+    padding: 20px 10px !important;
+}
+
+ul.list{
+    padding-left: 1rem;
 }
 
 .timeSection .list {

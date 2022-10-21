@@ -38,7 +38,7 @@ div {
   position: relative;
 }
 
-div::before {
+.roulette::before {
   content: "";
   position: absolute;
   width: 10px;
