@@ -34,7 +34,7 @@
 }
 
 .todoContainer {
-    background-color: inherit;
+    background-color: #fff3;
     color: white;
     display: flex;
     flex-direction: column;
