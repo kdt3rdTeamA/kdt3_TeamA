@@ -9,6 +9,9 @@ let computerScoreLoca = $('.computer-score');
 let comResult = $('.com-result');
 let userResult = $('.user-result');
 
+resetBtn.attr('disabled', true);
+
+
 let switiching = setInterval(function() {
     let randomResult = Math.floor(Math.random() * 3 + 1);
     if (randomResult == 1) {

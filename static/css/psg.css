@@ -6,9 +6,12 @@ body {
 }
 .backImg{
     opacity: 0.5;
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     z-index: -1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .logo {
     position: absolute;
@@ -20,7 +23,13 @@ body {
     z-index: 1;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, 50%);
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -30,7 +39,7 @@ body {
 
 
 .btn {
-    background: rgb(70, 0, 182) !important;
+    background: rgb(45, 10, 102) !important;
     color: red !important;
     border: solid 4px white !important;
     text-shadow: -1px 0 white, 0 1px white, 1px 0  white, 0 -1px white !important;
@@ -49,7 +58,7 @@ body {
     text-shadow: none;
 }
 .sideBar {
-    background-color: rgb(45, 10, 102);
+    background: rgb(45, 10, 102);
     border: 0px;
     color: white;
     border-radius: 15%;

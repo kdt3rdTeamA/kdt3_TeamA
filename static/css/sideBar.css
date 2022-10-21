@@ -11,19 +11,99 @@
     height: 60px;
     padding: 10px;
 }
-
-.offcanvas {
-    --bs-offcanvas-width: 200px;
-    --bs-offcanvas-padding-x: 2rem;
-    --bs-offcanvas-padding-y: 2rem;
-    --bs-body-font-size: 1.3rem;
-}
-
-.dropdown-toggle {
-    font-size: 20px;
-}
-
 aside {
     color: black;
     font-family: 'Jua', sans-serif;
+}
+
+.bi-list {
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    left : 10px;
+    top : -90px;
+  }
+
+  .dropdown-toggle {
+    font-size: 25px;
+  }
+  .dropdown {
+      color: black;
+      font-size: 25px;
+    }
+  .dropdown-item {
+      font-size: 20px;
+  }
+  .offcanvas {
+      --bs-offcanvas-width: 300px;
+      --bs-offcanvas-padding-x: 2rem;
+      --bs-offcanvas-padding-y: 2rem;
+      --bs-body-font-size: 1.3rem;
+  }
+
+  @media screen and (min-width:1024px) {
+    .dropdown-toggle {
+      font-size: 32px;
+    }
+    .dropdown {
+      font-size: 32px;
+    }
+    .dropdown-item {
+      font-size: 25px;
+    }
+    .offcanvas {
+      --bs-offcanvas-width: 350px;
+      --bs-offcanvas-padding-x: 2rem;
+      --bs-offcanvas-padding-y: 2rem;
+      --bs-body-font-size: 1.3rem;
+    }
+  }
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .dropdown-toggle {
+      font-size: 25px;
+    }
+    .dropdown {
+        color: black;
+        font-size: 25px;
+      }
+    .dropdown-item {
+        font-size: 20px;
+    }
+    .offcanvas {
+        --bs-offcanvas-width: 300px;
+        --bs-offcanvas-padding-x: 2rem;
+        --bs-offcanvas-padding-y: 2rem;
+        --bs-body-font-size: 1.3rem;
+    }
+
+}
+
+@media screen and (max-width:767px){ 
+  .dropdown-toggle {
+    font-size: 13px;
+  }
+  .dropdown {
+      text-align: center;
+      font-size: 13px;
+      text-decoration-line: none;
+      text-decoration-color: none;
+      color: black;
+      padding: 0 0;
+  }
+  .offcanvas {
+      --bs-offcanvas-width: 120px;
+  }
+  .dropdown-item {
+      color: black;
+      font-size: 10px;
+    }
+
+}
+
+.bi-list {
+  cursor: pointer;
+}
+
+.dropdown-toggle{
+  cursor: pointer;
 }
