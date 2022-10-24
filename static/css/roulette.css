@@ -5,6 +5,7 @@ body {
   background: url(/static/css/image/backImgMain.jpg) no-repeat center;
   background-size: cover;
   overflow: hidden;
+  font-family: 'Jua', sans-serif;
 }
 
 canvas {
@@ -31,7 +32,7 @@ button:active {
 }
  
 div {
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   align-items: center;
   flex-direction: column;
