@@ -4,7 +4,7 @@ body {
   height: 100vh;
   background: url(/static/css/image/backImgMain.jpg) no-repeat center;
   background-size: cover;
-  overflow: hidden;
+  -ms-overflow-style: none;
   font-family: 'Jua', sans-serif;
 }
 
@@ -32,7 +32,6 @@ button:active {
 }
  
 div {
-  /* overflow: hidden; */
   display: flex;
   align-items: center;
   flex-direction: column;
