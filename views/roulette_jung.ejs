@@ -11,15 +11,22 @@
   </head>
   <style>
     body {
-    height: 100vh;
-    background: url(/static/css/image/roulette5.PNG) no-repeat center;
-    background-size: cover;
+      height: 100vh;
+      background: url(/static/css/image/roulette5.PNG) no-repeat center;
+      background-size: cover;
+      -ms-overflow-style: none;
     }
     .sideBar {
-            background-color: #ffffff;
-            border: 0px;
-            color: rgb(0, 0, 0);
+      background-color: #ffffff;
+      border: 0px;
+      color: rgb(0, 0, 0);
         }
+    .offcanvas {
+        background-color: rgb(82, 159, 226);
+      }
+    .dropdown-menu {
+      background-color: rgb(167, 208, 244);
+    }
   </style>
   <body>
     <%- include('./sideBarRe.ejs') %>
