@@ -45,9 +45,7 @@ function onGeoGood(position) {
             wicon.text('fail to load weather icon');
         }
         
-        
-        
-        console.log(data);
+        // console.log(data);
     }));
 }
 

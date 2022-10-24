@@ -9,7 +9,10 @@ let todoList = $('.todoList');
 todoBtn.on('click', function(e){
     e.preventDefault();
     let val = todoInput.val();
-    if (val !== ''){
+    if (val.replace(" ", '') == '할수있다') {
+        location.href='https://www.youtube.com/watch?v=XnJa6tK2ack';
+    }
+    else if (val !== ''){
         let elem = $("<li class='todoLi'></li>").text(val);
         elem.append("<button class='removeBtn'>X</button>");
         todoList.append(elem);
