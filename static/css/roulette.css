@@ -4,8 +4,8 @@ body {
   height: 100vh;
   background: url(/static/css/image/backImgMain.jpg) no-repeat center;
   background-size: cover;
-  -ms-overflow-style: none;
   font-family: 'Jua', sans-serif;
+  overflow:hidden;
 }
 
 canvas {

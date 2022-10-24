@@ -107,3 +107,14 @@ var saveT;
 
             });
     }
+
+    function clickCloud() {
+        Swal.fire({
+            title: '안녕하세요! 이스터에그입니다.',
+            text: '저희 프로젝트 이용해주셔서 감사합니다.',
+            imageUrl: '/static/img/egg.PNG',
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+          });
+    }
