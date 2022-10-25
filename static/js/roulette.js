@@ -60,7 +60,7 @@ const rotate = () => {
     $c.style.transition = `2s`;
     
     setTimeout(() => alert(
-      `오늘의 야식은?! ${product[ran]} 어떠신가요?`,
+      `오늘의 메뉴는?! ${product[ran]} 어떠신가요?`, 1
     ), 2000);
     
     

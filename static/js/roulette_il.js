@@ -59,7 +59,42 @@ const rotate = () => {
     $c.style.transform = `rotate(-${rotate}deg)`;
     $c.style.transition = `2s`;
     
-    setTimeout(() => alert(`오늘의 야식은?! ${product[ran]} 어떠신가요?`), 2000);
+    setTimeout(() => Swal.fire({
+      title: `${product[ran]} 당첨!`,
+      text: `오늘의 메뉴는?! ${product[ran]} 어떠신가요?`,
+      imageUrl: image,
+      imageWidth: 400,
+      imageHeight: 200,
+      imageAlt: 'Custom image',
+    }), 2000);
+    let image;
+    if (product[ran] == '초밥') {
+      image = "/static/img/chobab.PNG";
+    }
+    if (product[ran] == '돈카츠') {
+      image = "/static/img/donkkach.PNG";
+    }
+    if (product[ran] == '라멘') {
+      image = "/static/img/ramian_j.PNG";
+    }
+    if (product[ran] == '소바') {
+      image = "/static/img/soba.PNG";
+    }
+    if (product[ran] == '스키야키') {
+      image = "/static/img/sukiyaki.PNG";
+    }
+    if (product[ran] == '오니기리') {
+      image = "/static/img/onigiri.PNG";
+    }
+    if (product[ran] == '오코노미야키') {
+      image = "/static/img/okonomi.PNG";
+    }
+    if (product[ran] == '야키토리') {
+      image = "/static/img/yakitori.PNG";
+    }
+    if (product[ran] == '우동') {
+      image = "/static/img/woodong.PNG";
+    }
   }, 1);
 
 

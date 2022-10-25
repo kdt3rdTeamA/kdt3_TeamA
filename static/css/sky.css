@@ -49,9 +49,18 @@ body {
 
     animation-name: cloudMove;
     animation-duration: 10s;
-    animation-iteration-count: 5;
+    animation-iteration-count: 500;
     animation-timing-function: linear;
     animation-delay: 2s;
+}
+
+.cloud3 {
+  width: 150px;
+  height: 150px;
+  position: absolute; 
+  top: 50%;
+  right: 0%;
+  transform: translate(-50%, -50%);
 }
 
 .cloud2 {
@@ -64,7 +73,7 @@ body {
 
     animation-name: cloudMove2;
     animation-duration: 6s;
-    animation-iteration-count: 5;
+    animation-iteration-count: 500;
     animation-timing-function: linear;
     animation-delay: 2s;
 }

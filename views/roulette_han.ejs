@@ -7,21 +7,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/sideBarRe.css">
   </head>
   <style>
     body {
     height: 100vh;
     background: url(/static/css/image/roulette1.jpg) no-repeat center;
     background-size: cover;
+    font-family: 'Jua', sans-serif;
+    -ms-overflow-style: none;
+    }
+    .sideBar {
+            background-color: #f9f5ee;
+            border: 0px;
+            color: rgb(129, 90, 32);
+    }
+    .offcanvas {
+        background-color: #f9f5ee;
+      }
+    .dropdown-menu {
+      background-color: #fee5bb;
     }
   </style>
   <body>
-
-    <h1>🍲 야식 메뉴 추천 룰렛 (한식) 🍚</h1>
+    <%- include('./sideBarRe.ejs') %>
+    <h1>🍲 오늘 뭐 먹지? (한식) 🍚</h1>
     <div class="roulette">
       <canvas width="380" height='380'></canvas><br>
       <button onclick="rotate()">룰렛 돌리기</button>
     </div>
     <script src="/static/js/roulette_han.js"></script>
+    <script src="/static/js/sweetAlert.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 </html>
