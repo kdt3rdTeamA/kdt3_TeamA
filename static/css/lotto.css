@@ -1,15 +1,11 @@
 body{
     background-image: linear-gradient(rgba(0,0,0, 1),  rgba(5, 5, 2, 0.6));
     background-repeat: repeat;
-    /* background-color: black; */
     background-size: 50 vw;
     color: white;
-    /* background-image: url(); */
     background-position: top;
 }
 .title{
-    z-index: 10;
-    
     position: relative;
     font-size: 8vh;
 }
@@ -17,16 +13,64 @@ body{
     font-size: 5vh;
     margin: 2vh 0 ;
 }
-
-#printBox1, #printBox2 {
-    margin: 5vh 2vw;
+section{
+    overflow:auto;
+    height: 100vw;
+    font-size: 1rem;
+    display: flex;
+}
+.bi-gem{
+    color: white;
+}
+.bi-gem-none{
     display: none;
-    /* margin: 0 10%; */
+}
+.vline{
+    width: 50vw;
+    border-right: dashed 3px rgba(100, 100, 100, 0.9);
+}
+form{
+    text-align: center;
+    align-items: center;
+    position: top;
+    border-right: dashed 3px rgba(100, 100, 100, 0.9);
+    border-top: dashed 3px rgba(230, 230, 230, 0.9);
+}
+.left, .right{
+    width: 50vw;
+    display: inline-block;    
+}
+input{
+    text-align: right;
+    }
+.btn{
+    border-radius: 50% !important;
+    padding: 2vh 1vh;
+    font-size: 2vh;
+    font-weight: 900;    
+}    
+.btn:click {
+        transform: translateY(-20%);
+    
+    }
+.inputBtn {
+    border: solid 2px white;
+    border-radius: 15px;
+    width: 40px;
+    height: 25px;
+    background-color: rgb(200, 200, 200);
+    text-align: center;
+    font-size: 2vh;
+    box-shadow: 0 5px 10px -7px rgba(255, 255, 255 ,1);
+}
+#printBox1, #printBox2 {
+    margin: 5vh 0;
+    width: 40vw;
+    display: none;
     background-color: rgba(230, 230, 230, 0.9);
     border: 2px solid white;
-    
-    padding: 1vh 2vw;
-    font-size: 3vh;
+    padding: 2vh 0;
+    font-size: 16px;
 }
 #printBox2 {
     margin-top: 7vh;
@@ -37,89 +81,20 @@ body{
     width: 40px;
     height: 40px;
     display: inline-block;        
-    padding: 10px 4px 0;;
+    margin-top: 1vh;
+    padding: 10px 4px 0;
     border-radius: 50%;
     text-align: center;
     color: white;
     font-weight: bold;
     box-shadow: 0 5px 10px -7px rgba(0,0,0,0.8);
-
-    /* vertical-align: middle; */
 }
-form{
-    text-align: center;
-    align-items: center;
-    position: top;
-    border-right: dashed 3px rgba(100, 100, 100, 0.9);
-    border-top: dashed 3px rgba(230, 230, 230, 0.9);
-    /* height: auto; */
-
-
-}
-input{
-text-align: right;
-}
-
-section{
-    overflow:auto;
-    height: 100vw;
-    font-size: 1rem;
-    display: flex;
-    /* background-color: aquamarine; */
-    /* margin-top: 13vh; */
-
-}
-
-.left, .right{
-    width: 50vw;
-    /* height: 20vh; */
-    /* margin-left: 3%; */
-    /* margin-right: 3%; */
-    display: inline-block;
-    /* background-color: brown ; */
-    
-}
-
-.btn{
-    border-radius: 50% !important;
-    /* height: 50px !important; */
-    padding: 2vh 1vh;
-
-    font-size: 2vh;
-    font-weight: 900;    
-}    
-.btn:click {
-    transform: translateY(-20%);
-
-}
-.inputBtn {
-    border: solid 2px white;
-    border-radius: 15px;
-    width: 35px;
-    height: 25px;
-    background-color: rgb(200, 200, 200);
-    text-align: center;
-    font-size: 2vh;
-    box-shadow: 0 5px 10px -7px rgba(255, 255, 255 ,1);
-
-}
-.vline{
-    width: 50vw;
-    /* height: 100%; */
-    border-right: dashed 3px rgba(100, 100, 100, 0.9);
-    /* border-top: dashed 3px rgba(230, 230, 230, 0.9); */
-}
-
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
    -webkit-appearance: none;
     margin: 0;
 }
-
-.bi-gem-none{
-    color:  black;
-}
-
+/* 중복버튼css */
 /*input 은 숨겨주기*/
 input#OcheckBox{
     display:none;
@@ -152,9 +127,11 @@ input#OcheckBox{
     text-align:center;
     }
 
-@media(max-width: 767px){
+@media(max-width: 768px){
     .vline{
         border: none;
+        display: none;
+
     }
     form{
         border: none;
@@ -168,9 +145,17 @@ input#OcheckBox{
         margin-bottom: 10vh;
     }
     .numCir{
-        font-size: 16px;
+        font-size: 12px;
         width: 30px;
         height: 30px;
+        padding: 8px 4px 0;
+
     }
-    
+    #printBox1, #printBox2 {
+        width: 70vw;
+    }  
+    .left, .right{
+        width: 80vw;
+        /* background-color: aqua; */
+    }    
 }
