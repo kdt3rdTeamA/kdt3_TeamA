@@ -16,154 +16,153 @@ app.get('/', function(req, res){
 })
 console.log('path')
 // pomodoro render section
-app.get('/pomodoro/pomodoro_dark', function(req, res) {
-    res.render('pomodoro_dark');
-})
+app.get('/pomodoro_dark', function(req, res) {
+    res.render('pomodoro/pomodoro_dark');
 app.get('/pomodoro_light', function(req, res) {
-    res.render('pomodoro_light');
+    res.render('pomodoro/pomodoro_light');
 })
 app.get('/pomodoro_tomato', function(req, res) {
-    res.render('pomodoro_tomato');
+    res.render('pomodoro/pomodoro_tomato');
 })
 app.get('/pomodoro_fresh', function(req, res) {
-    res.render('pomodoro_fresh');
+    res.render('pomodoro/pomodoro_fresh');
 })
 app.get('/pomodoro_sky', function(req, res) {
-    res.render('pomodoro_sky');
+    res.render('pomodoro/pomodoro_sky');
 })
 app.get('/pomodoro_dog', function(req, res) {
-    res.render('pomodoro_dog');
+    res.render('pomodoro/pomodoro_dog');
 })
 app.get('/pomodoro_cat', function(req, res) {
-    res.render('pomodoro_cat');
+    res.render('pomodoro/pomodoro_cat');
 })
 app.get('/pomodoro_whale', function(req, res) {
-    res.render('pomodoro_whale');
+    res.render('pomodoro/pomodoro_whale');
 })
 app.get('/pomodoro_mancity', function(req, res) {
-    res.render('pomodoro_mancity');
+    res.render('pomodoro/pomodoro_mancity');
 })
 app.get('/pomodoro_manuni', function(req, res) {
-    res.render('pomodoro_manuni');
+    res.render('pomodoro/pomodoro_manuni');
 })
 app.get('/pomodoro_tottenham', function(req, res) {
-    res.render('pomodoro_tottenham');
+    res.render('pomodoro/pomodoro_tottenham');
 })
 app.get('/pomodoro_psg', function(req, res) {
-    res.render('pomodoro_psg');
+    res.render('pomodoro/pomodoro_psg');
 })
 
 // timer render section
 app.get('/timer_dark', function(req, res) {
-    res.render('timer_dark');
+    res.render('timer/timer_dark');
 })
 app.get('/timer_light', function(req, res) {
-    res.render('timer_light');
+    res.render('timer/timer_light');
 })
 app.get('/timer_tomato', function(req, res) {
-    res.render('timer_tomato');
+    res.render('timer/timer_tomato');
 })
 app.get('/timer_fresh', function(req, res) {
-    res.render('timer_fresh');
+    res.render('timer/timer_fresh');
 })
 app.get('/timer_sky', function(req, res) {
-    res.render('timer_sky');
+    res.render('timer/timer_sky');
 })
 app.get('/timer_dog', function(req, res) {
-    res.render('timer_dog');
+    res.render('timer/timer_dog');
 })
 app.get('/timer_cat', function(req, res) {
-    res.render('timer_cat');
+    res.render('timer/timer_cat');
 })
 app.get('/timer_whale', function(req, res) {
-    res.render('timer_whale');
+    res.render('timer/timer_whale');
 })
 app.get('/timer_mancity', function(req, res) {
-    res.render('timer_mancity');
+    res.render('timer/timer_mancity');
 })
 app.get('/timer_manuni', function(req, res) {
-    res.render('timer_manuni');
+    res.render('timer/timer_manuni');
 })
 app.get('/timer_tottenham', function(req, res) {
-    res.render('timer_tottenham');
+    res.render('timer/timer_tottenham');
 })
 app.get('/timer_psg', function(req, res) {
-    res.render('timer_psg');
+    res.render('timer/timer_psg');
 })
 
 // sw render section
 app.get('/sw_dark', function(req, res) {
-    res.render('sw_dark');
+    res.render('stopwatch/sw_dark');
 })
 app.get('/sw_light', function(req, res) {
-    res.render('sw_light');
+    res.render('stopwatch/sw_light');
 })
 app.get('/sw_tomato', function(req, res) {
-    res.render('sw_tomato');
+    res.render('stopwatch/sw_tomato');
 })
 app.get('/sw_fresh', function(req, res) {
-    res.render('sw_fresh');
+    res.render('stopwatch/sw_fresh');
 })
 app.get('/sw_sky', function(req, res) {
-    res.render('sw_sky');
+    res.render('stopwatch/sw_sky');
 })
 app.get('/sw_dog', function(req, res) {
-    res.render('sw_dog');
+    res.render('stopwatch/sw_dog');
 })
 app.get('/sw_cat', function(req, res) {
-    res.render('sw_cat');
+    res.render('stopwatch/sw_cat');
 })
 app.get('/sw_whale', function(req, res) {
-    res.render('sw_whale');
+    res.render('stopwatch/sw_whale');
 })
 app.get('/sw_mancity', function(req, res) {
-    res.render('sw_mancity');
+    res.render('stopwatch/sw_mancity');
 })
 app.get('/sw_manuni', function(req, res) {
-    res.render('sw_manuni');
+    res.render('stopwatch/sw_manuni');
 })
 app.get('/sw_tottenham', function(req, res) {
-    res.render('sw_tottenham');
+    res.render('stopwatch/sw_tottenham');
 })
 app.get('/sw_psg', function(req, res) {
-    res.render('sw_psg');
+    res.render('stopwatch/sw_psg');
 })
 
 // gababo
 app.get('/gababo', function(req, res) {
-    res.render('gababo');
+    res.render('miniGames/gababo');
 })
 // lotto
 app.get('/lotto', function(req, res) {
-    res.render('lotto');
+    res.render('miniGames/lotto');
 })
 
 // wordle
 app.get('/wordle', function(req, res) {
-    res.render('wordle');
+    res.render('miniGames/wordle');
 })
 
 //룰렛 
 app.get('/roulette', function(req, res) {
-    res.render('roulette');
+    res.render('miniGames/roulette');
 })
 
 app.get('/roulette_bun', function(req, res) {
-    res.render('roulette_bun');
+    res.render('miniGames/roulette_bun');
 })
 
 app.get('/roulette_han', function(req, res) {
-    res.render('roulette_han');
+    res.render('miniGames/roulette_han');
 })
 
 app.get('/roulette_il', function(req, res) {
-    res.render('roulette_il');
+    res.render('miniGames/roulette_il');
 })
 
 app.get('/roulette_jung', function(req, res) {
-    res.render('roulette_jung');
+    res.render('miniGames/roulette_jung');
 })
 
 app.get('/roulette_yang', function(req, res) {
-    res.render('roulette_yang');
+    res.render('miniGames/roulette_yang');
 })

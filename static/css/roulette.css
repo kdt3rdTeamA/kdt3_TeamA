@@ -67,3 +67,74 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.hamburger {
+  width: 150px;
+  height: 160px;
+  position: absolute;   
+  top: 90%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+  animation-name: hamburger;
+  animation-duration: 5s;
+  animation-iteration-count: 500;
+  animation-timing-function: linear;
+  }
+  .potato {
+  width: 150px;
+  height: 120px;
+  position: absolute;   
+  top: 90%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+  animation-name: potato;
+  animation-duration: 7s;
+  animation-iteration-count: 500;
+  animation-timing-function: linear;
+  }
+  @keyframes hamburger {
+    0% {
+        top: 90%;
+        right: 5%;
+    }
+    25% {
+        top: 90%;
+        right: 10%;
+    }
+    50% {
+        top: 90%;
+        right: 15%;
+        opacity: 0.5;
+    }
+    75% {
+        top: 90%;
+        right: 10%;
+    }
+    100% {
+        top: 90%;
+        right: 5%;
+    }
+  }
+  @keyframes potato {
+    0% {
+        top: 90%;
+        right: 10%;
+    }
+    25% {
+        top: 90%;
+        right: 15%;
+    }
+    50% {
+        top: 90%;
+        right: 20%;
+        opacity: 0.5;
+    }
+    75% {
+        top: 90%;
+        right: 15%;
+    }
+    100% {
+        top: 90%;
+        right: 10%;
+    }
+  }
