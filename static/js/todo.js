@@ -12,6 +12,9 @@ todoBtn.on('click', function(e){
     if (val.replace(" ", '') == '할수있다') {
         location.href='https://www.youtube.com/watch?v=XnJa6tK2ack';
     }
+    else if (val.replace(" ", '') == '할수없다') {
+        location.href='https://www.youtube.com/watch?v=ZXsQAXx_ao0';
+    }
     else if (val !== ''){
         let elem = $("<li class='todoLi'></li>").text(val);
         elem.append("<button class='removeBtn'>X</button>");
