@@ -69,31 +69,31 @@ const rotate = () => {
     }), 2000);
     let image;
     if (product[ran] == '초밥') {
-      image = "/static/img/chobab.PNG";
+      image = "/static/img/roulette_il/chobab.PNG";
     }
     if (product[ran] == '돈카츠') {
-      image = "/static/img/donkkach.PNG";
+      image = "/static/img/roulette_il/donkkach.PNG";
     }
     if (product[ran] == '라멘') {
-      image = "/static/img/ramian_j.PNG";
+      image = "/static/img/roulette_il/ramian_j.PNG";
     }
     if (product[ran] == '소바') {
-      image = "/static/img/soba.PNG";
+      image = "/static/img/roulette_il/soba.PNG";
     }
     if (product[ran] == '스키야키') {
-      image = "/static/img/sukiyaki.PNG";
+      image = "/static/img/roulette_il/sukiyaki.PNG";
     }
     if (product[ran] == '오니기리') {
-      image = "/static/img/onigiri.PNG";
+      image = "/static/img/roulette_il/onigiri.PNG";
     }
     if (product[ran] == '오코노미야키') {
-      image = "/static/img/okonomi.PNG";
+      image = "/static/img/roulette_il/okonomi.PNG";
     }
     if (product[ran] == '야키토리') {
-      image = "/static/img/yakitori.PNG";
+      image = "/static/img/roulette_il/yakitori.PNG";
     }
     if (product[ran] == '우동') {
-      image = "/static/img/woodong.PNG";
+      image = "/static/img/roulette_il/woodong.PNG";
     }
   }, 1);
 
