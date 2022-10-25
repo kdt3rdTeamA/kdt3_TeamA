@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>룰렛</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/static/css/roulette.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/sideBarRe.css">
+  </head>
+  <style>
+    body {
+    height: 100vh;
+    width: 100vw;
+    background: url(/static/css/image/roulette3.jpg) center;
+    background-size: cover;
+    }
+    .sideBar {
+            background-color: #ffffff;
+            border: 0px;
+            color: rgb(0, 0, 0);
+    }
+    .offcanvas {
+        background-color: #f6f5f3;
+      }
+    .dropdown-menu {
+      background-color: #f6e3bc;
+    }
+  </style>
+  <body>
+    <%- include('../sideBarRe.ejs') %>
+    <h1>🍛 오늘 뭐 먹지? (분식) 🍜</h1>
+    <div class="roulette">
+      <canvas width="380" height='380'></canvas><br>
+      <button onclick="rotate()">룰렛 돌리기</button>
+    </div>
+    <script src="/static/js/roulette_bun.js"></script>
+    <script src="/static/js/sweetAlert.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+  </body>
+</html>
