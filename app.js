@@ -18,6 +18,7 @@ console.log('path')
 // pomodoro render section
 app.get('/pomodoro_dark', function(req, res) {
     res.render('pomodoro/pomodoro_dark');
+})
 app.get('/pomodoro_light', function(req, res) {
     res.render('pomodoro/pomodoro_light');
 })

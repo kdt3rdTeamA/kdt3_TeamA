@@ -9,6 +9,8 @@ let ranNum = Math.floor(Math.random() * wordList.length);
 
 let word = `${wordList[ranNum].toUpperCase()}`;
 // console.log(word);
+let descriptBtn = $('.descript');
+let descriptContent = $('.descriptContent');
 let replayBtn = $('.replay');
 
 window.onload = function () {
@@ -17,7 +19,18 @@ window.onload = function () {
 
 replayBtn.on('click', function() {
     window.location.reload();
+});
+
+descriptBtn.on('click', function() {
+    descriptContent.toggleClass('dpnone');
+    descriptBtn.toggleClass('dpnone');
 })
+
+descriptContent.on('click', function() {
+    descriptContent.toggleClass('dpnone');
+    descriptBtn.toggleClass('dpnone');
+})
+
 function intialize() {
 
     // Create the game board
