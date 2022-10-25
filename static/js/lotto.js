@@ -6,6 +6,7 @@ const bonusNum=2;
 var arr=[];
 var overArr=[];
 var overCheck;
+const win = document.querySelectorAll('.printBox> .lottoPrint');
 const gem = document.querySelectorAll('h1> .bi-gem');
     var a=setInterval(function(){
     gem[0].classList.toggle('bi-gem-none');
@@ -53,10 +54,15 @@ form1.addEventListener('click', function (event) {
     console.log(cnt, bonus, 'line=', i);
     if(cnt===3){
         document.getElementById('lottoPrint').innerHTML += "5등";
-    }else if(cnt===4) {document.getElementById('lottoPrint').innerHTML += "4등";
-    }else if(cnt===5) {document.getElementById('lottoPrint').innerHTML += "3등";
-    }else if(cnt===6) {document.getElementById('lottoPrint').innerHTML += "1등";
-    }else if(cnt===5 && bonus>0){document.getElementById('lottoPrint').innerHTML += '2등';
+        win[i]
+    }else if(cnt===4) {
+        document.getElementById('lottoPrint').innerHTML += "4등";
+    }else if(cnt===5) {
+        document.getElementById('lottoPrint').innerHTML += "3등";
+    }else if(cnt===6) {
+        document.getElementById('lottoPrint').innerHTML += "1등";
+    }else if(cnt===5 && bonus>0){
+        document.getElementById('lottoPrint').innerHTML += '2등';
     }
     document.getElementById('lottoPrint').innerHTML +="<br>";
     cnt=0;
