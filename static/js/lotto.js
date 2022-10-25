@@ -1,7 +1,8 @@
 const form1= document.querySelector('#lottoDraw');
 const form2= document.querySelector('#numDraw');
 const overlap= document.querySelector('#OcheckBox');
-
+const winArr=[7, 16, 24, 27, 37, 44];
+const bonusNum=2;
 var arr=[];
 var overArr=[];
 var overCheck;
@@ -15,7 +16,8 @@ form1.addEventListener('click', function (event) {
     event.preventDefault();
     document.getElementById('lottoPrint').innerHTML = "";
     document.getElementById('printBox1').style.display = 'inline-block';
-
+    let cnt=0;
+    let bonus=0;
     const lines = document.querySelector('input[name="lotto"]').value;
 
     for(var i=0; i<lines; i++){
@@ -23,7 +25,7 @@ form1.addEventListener('click', function (event) {
     document.getElementById('lottoPrint').innerHTML +='<span style="color: black"> '+(i+1)+' line</span>';
         for(var j=0; j<arr.length; j++){
             if(0<arr[j] && arr[j] < 11){
-                document.getElementById('lottoPrint').innerHTML +=  " <span class='numCir' style='background-color:#fac400;''>" +arr[j]+ "</span>";
+                document.getElementById('lottoPrint').innerHTML +=  " <span class='numCir' style='background-color:#fac400;'>" +arr[j]+ "</span>";
             }
             else if(10<arr[j] && arr[j] < 21) {
                 document.getElementById('lottoPrint').innerHTML +=" <span class='numCir' style='background-color:#69c8f2;'>" +arr[j]+ "</span>";
@@ -38,8 +40,29 @@ form1.addEventListener('click', function (event) {
                 document.getElementById('lottoPrint').innerHTML +=" <span class='numCir' style='background-color:#b0d840;'>" +arr[j]+ "</span>";
             }
         }
-    document.getElementById('lottoPrint').innerHTML +="<br><br>";
-    }   
+    for(var a=0; a<6; a++){
+        if(arr[a]===bonusNum){
+            bonus++;
+        }
+        for(var b=0; b<6; b++){
+            if(arr[a]===winArr[b]){
+                cnt++;
+            }
+        }
+    }
+    console.log(cnt, bonus, 'line=', i);
+    if(cnt===3){
+        document.getElementById('lottoPrint').innerHTML += "5등";
+    }else if(cnt===4) {document.getElementById('lottoPrint').innerHTML += "4등";
+    }else if(cnt===5) {document.getElementById('lottoPrint').innerHTML += "3등";
+    }else if(cnt===6) {document.getElementById('lottoPrint').innerHTML += "1등";
+    }else if(cnt===5 && bonus>0){document.getElementById('lottoPrint').innerHTML += '2등';
+    }
+    document.getElementById('lottoPrint').innerHTML +="<br>";
+    cnt=0;
+    bonus=0;
+}
+
 });
 form2.addEventListener('click', function (event) {
     event.preventDefault();
@@ -82,7 +105,6 @@ form2.addEventListener('click', function (event) {
     
 });
 overlap.addEventListener('click', function(){
-    console.log('ov check')
     overCheck=overlap.checked;
 
 });
