@@ -6,7 +6,7 @@ const product = [
   "국밥", '비빔밥', "소불고기", "제육볶음", "김치찌개", "된장찌개", '삼겹살', "생선구이", "감자탕",
 ];
 
-const colors = ["#ff8e7f", "#6ccad0", "#cbbeb5", "#ffe4e1 ", "#929292", "#ff8e7f", "#6ccad0", "#cbbeb5", "#ffe4e1", "#cbbeb5", "#929292"];
+const colors = ["#ee7b33", "#654210", "#005375", "#f1e2cb", "#005375", "#ee7b33", "#654210", "#005375", "#f1e2cb", "#005375", "#005375"];
 
 const newMake = () => {
     const [cw, ch] = [$c.width / 2, $c.height / 2];
