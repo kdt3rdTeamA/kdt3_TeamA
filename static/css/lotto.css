@@ -1,6 +1,6 @@
 body{
     background-image: linear-gradient(rgba(0,0,0, 1),  rgba(5, 5, 2, 0.6));
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     /* background-color: black; */
     background-size: 50 vw;
     color: white;
@@ -115,6 +115,42 @@ input[type="number"]::-webkit-inner-spin-button {
    -webkit-appearance: none;
     margin: 0;
 }
+
+.bi-gem-none{
+    color:  black;
+}
+
+/*input 은 숨겨주기*/
+input#OcheckBox{
+    display:none;
+    }
+  /*input 바로 다음의 label*/
+  input#OcheckBox + label{
+    cursor:pointer;
+   }
+  
+  /*input 바로 다음의 label:before 에 체크하기 전 CSS 설정*/
+  input#OcheckBox + label:before{
+    content:"";
+    display:inline-block;
+    width:17px;
+    height:17px;
+    line-height:17px;
+    border:1px solid #cbcbcb;
+    vertical-align:middle;/*체크 전과 체크 후 높이 차이 때문에 설정*/
+    }
+    
+  /*checked된 input 바로 다음의 label:before 에 체크 후 CSS 설정*/  
+  input#OcheckBox:checked + label:before{
+    content:"\f00c";/*폰트어썸 유니코드*/
+    font-family:"Font Awesome 5 free"; /*폰트어썸 아이콘 사용*/
+    font-weight:900;/*폰트어썸 설정*/
+    color:#fff;
+    background-color:#000;
+    border-color:#000;
+    font-size:13px;
+    text-align:center;
+    }
 
 @media(max-width: 767px){
     .vline{

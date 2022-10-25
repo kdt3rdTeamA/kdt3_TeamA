@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 8000
+const path = require("path");
 
 app.listen(port, function() {
     console.log('server on at port 8000');
@@ -13,11 +14,10 @@ app.use('/static', express.static(__dirname + '/static'));
 app.get('/', function(req, res){
     res.render('index');
 })
-
+console.log('path')
 // pomodoro render section
 app.get('/pomodoro_dark', function(req, res) {
     res.render('pomodoro/pomodoro_dark');
-})
 app.get('/pomodoro_light', function(req, res) {
     res.render('pomodoro/pomodoro_light');
 })
