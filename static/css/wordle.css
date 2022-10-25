@@ -9,6 +9,46 @@ hr {
     width: 100%;
 }
 
+.dpnone {
+    display: none !important;
+}
+
+.descript {
+    font-family: 'Jua', sans-serif;
+    font-size: 24px;
+    position: fixed;
+    right: 5px;
+    top: 3%;
+}
+
+.d-green {
+    color: #6AAA64;
+}
+.d-yellow {
+    color: #C9B458;
+}
+.d-gray {
+    color: #787C7E;
+}
+
+.descript:hover {
+    
+    transform: none;
+}
+
+.descriptContent {
+    position: fixed;
+    right: 5px;
+    top: 3%;
+    text-align: left;
+    padding-left: 10px;
+    width: 400px;
+    display: block;
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+}
+
 #title {
     font-size: 2rem;
     font-weight: bold;
@@ -71,5 +111,12 @@ hr {
 @media (max-width: 450px) {
     .replay {
         font-size: 20px;
+    }
+    .descript {
+        font-size: 12px;
+    }
+    .descriptContent {
+        width: 40%;
+        font-size: 14px;
     }
 }

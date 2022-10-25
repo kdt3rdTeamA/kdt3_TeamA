@@ -69,31 +69,31 @@ const rotate = () => {
     }), 2000);
     let image;
     if (product[ran] == '짜장면') {
-      image = "/static/img/zzazang.PNG";
+      image = "/static/img/roulette_jung/zzazang.PNG";
     }
     if (product[ran] == '짬뽕') {
-      image = "/static/img/zzambbong.PNG";
+      image = "/static/img/roulette_jung/zzambbong.PNG";
     }
     if (product[ran] == '마라탕') {
-      image = "/static/img/maratang.PNG";
+      image = "/static/img/roulette_jung/maratang.PNG";
     }
     if (product[ran] == '꿔바로우') {
-      image = "/static/img/gguobarou.PNG";
+      image = "/static/img/roulette_jung/gguobarou.PNG";
     }
     if (product[ran] == '마라샹궈') {
-      image = "/static/img/marasang.PNG";
+      image = "/static/img/roulette_jung/marasang.PNG";
     }
     if (product[ran] == '깐풍기') {
-      image = "/static/img/gganpunggi.PNG";
+      image = "/static/img/roulette_jung/gganpunggi.PNG";
     }
     if (product[ran] == '잡채밥') {
-      image = "/static/img/jabchebab.PNG";
+      image = "/static/img/roulette_jung/jabchebab.PNG";
     }
     if (product[ran] == '팔보채') {
-      image = "/static/img/palbochae.PNG";
+      image = "/static/img/roulette_jung/palbochae.PNG";
     }
     if (product[ran] == '마파두부밥') {
-      image = "/static/img/mapatopu.PNG";
+      image = "/static/img/roulette_jung/mapatopu.PNG";
     }
   }, 1);
 

@@ -2,7 +2,7 @@
 
 body {
   height: 100vh;
-  background: url(/static/css/image/backImgMain.jpg) no-repeat center;
+  background: url(/static/img/rouletteBackImg/backImgMain.jpg) no-repeat center;
   background-size: cover;
   font-family: 'Jua', sans-serif;
   overflow:hidden;

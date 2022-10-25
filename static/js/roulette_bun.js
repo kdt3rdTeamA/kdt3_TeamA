@@ -68,31 +68,31 @@ const rotate = () => {
     }), 2000);
     let image;
     if (product[ran] == '김밥') {
-      image = "/static/img/kimbab.jpg";
+      image = "/static/img/roulette_bun/kimbab.jpg";
     }
     if (product[ran] == '떡볶이') {
-      image = "/static/img/dduckboki.PNG";
+      image = "/static/img/roulette_bun/dduckboki.PNG";
     }
     if (product[ran] == '순대') {
-      image = "/static/img/sundae.PNG";
+      image = "/static/img/roulette_bun/sundae.PNG";
     }
     if (product[ran] == '라면') {
-      image = "/static/img/ramian.PNG";
+      image = "/static/img/roulette_bun/ramian.PNG";
     }
     if (product[ran] == '돈까스') {
-      image = "/static/img/donggass.PNG";
+      image = "/static/img/roulette_bun/donggass.PNG";
     }
     if (product[ran] == '라볶이') {
-      image = "/static/img/rabboki.PNG";
+      image = "/static/img/roulette_bun/rabboki.PNG";
     }
     if (product[ran] == '모둠튀김') {
-      image = "/static/img/modoom.PNG";
+      image = "/static/img/roulette_bun/modoom.PNG";
     }
     if (product[ran] == '쫄면') {
-      image = "/static/img/zzolmian.PNG";
+      image = "/static/img/roulette_bun/zzolmian.PNG";
     }
     if (product[ran] == '냉면') {
-      image = "/static/img/naegmian.PNG";
+      image = "/static/img/roulette_bun/naegmian.PNG";
     }
     
   }, 1);
