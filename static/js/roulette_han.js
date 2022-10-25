@@ -68,31 +68,31 @@ const rotate = () => {
     }), 2000);
     let image;
     if (product[ran] == '국밥') {
-      image = "/static/img/cookbab.PNG";
+      image = "/static/img/roulette_han/cookbab.PNG";
     }
     if (product[ran] == '비빔밥') {
-      image = "/static/img/bibeambab.PNG";
+      image = "/static/img/roulette_han/bibeambab.PNG";
     }
     if (product[ran] == '소불고기') {
-      image = "/static/img/sobulgogi.PNG";
+      image = "/static/img/roulette_han/sobulgogi.PNG";
     }
     if (product[ran] == '제육볶음') {
-      image = "/static/img/jaeyuk.PNG";
+      image = "/static/img/roulette_han/jaeyuk.PNG";
     }
     if (product[ran] == '김치찌개') {
-      image = "/static/img/kimchi.PNG";
+      image = "/static/img/roulette_han/kimchi.PNG";
     }
     if (product[ran] == '된장찌개') {
-      image = "/static/img/deunzang.PNG";
+      image = "/static/img/roulette_han/deunzang.PNG";
     }
     if (product[ran] == '삼겹살') {
-      image = "/static/img/sam.PNG";
+      image = "/static/img/roulette_han/sam.PNG";
     }
     if (product[ran] == '생선구이') {
-      image = "/static/img/fish.PNG";
+      image = "/static/img/roulette_han/fish.PNG";
     }
     if (product[ran] == '감자탕') {
-      image = "/static/img/gamza.PNG";
+      image = "/static/img/roulette_han/gamza.PNG";
     }
     
    

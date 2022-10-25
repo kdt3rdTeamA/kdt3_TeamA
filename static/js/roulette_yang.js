@@ -69,31 +69,31 @@ const rotate = () => {
     }), 2000);
     let image;
     if (product[ran] == '피자') {
-      image = "/static/img/pizza.PNG";
+      image = "/static/img/roulette_yang/pizza.PNG";
     }
     if (product[ran] == '샐러드') {
-      image = "/static/img/salad.PNG";
+      image = "/static/img/roulette_yang/salad.PNG";
     }
     if (product[ran] == '파스타') {
-      image = "/static/img/pasta.PNG";
+      image = "/static/img/roulette_yang/pasta.PNG";
     }
     if (product[ran] == '스테이크') {
-      image = "/static/img/steak.PNG";
+      image = "/static/img/roulette_yang/steak.PNG";
     }
     if (product[ran] == '리조또') {
-      image = "/static/img/rizzotto.PNG";
+      image = "/static/img/roulette_yang/rizzotto.PNG";
     }
     if (product[ran] == '햄버거') {
-      image = "/static/img/hamburgur.PNG";
+      image = "/static/img/roulette_yang/hamburgur.PNG";
     }
     if (product[ran] == '토스트') {
-      image = "/static/img/toast.PNG";
+      image = "/static/img/roulette_yang/toast.PNG";
     }
     if (product[ran] == '샌드위치') {
-      image = "/static/img/sandwitch.PNG";
+      image = "/static/img/roulette_yang/sandwitch.PNG";
     }
     if (product[ran] == '치킨') {
-      image = "/static/img/chicken.PNG";
+      image = "/static/img/roulette_yang/chicken.PNG";
     }
   }, 1);
 
