@@ -78,7 +78,7 @@ function intialize() {
         if (!gameOver && row == height) {
             Swal.fire('Fail!');
             gameOver = true;
-            document.getElementById("answer").innerText = word;
+            document.getElementById("answer").innerText = `Answer: ${word}`;
         }
 
     })

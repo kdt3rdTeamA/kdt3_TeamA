@@ -41,9 +41,10 @@ hr {
     right: 5px;
     top: 3%;
     text-align: left;
-    padding-left: 10px;
+    padding: 8px;
     width: 400px;
     display: block;
+    font-size: 20px;
     background-color: white;
     border-radius: 15px;
     color: black;
@@ -56,12 +57,16 @@ hr {
 }
 
 #board {
-    width: 350px;
+    width: 340px;
     height: 420px;
     margin: 0 auto;
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
+}
+
+#answer {
+    margin: 10px 0;
 }
 
 .tile {
@@ -100,7 +105,7 @@ hr {
 
 .replay {
     font-family: 'Jua', sans-serif;
-    width: 25%;
+    width: 20%;
     margin: 0 auto;
 }
 
@@ -110,7 +115,7 @@ hr {
 
 @media (max-width: 450px) {
     .replay {
-        font-size: 20px;
+        font-size: 12px !important;
     }
     .descript {
         font-size: 12px;

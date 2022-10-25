@@ -10,6 +10,11 @@ p, h1 {
     margin: 0;
 }
 
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -22,6 +27,40 @@ header {
 
 section {
     height: 60vh;
+}
+
+.userInputCon p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.userInputCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7%;
+}
+
+.user-nain{
+    margin: 0px 7px ;
+}
+
+input[type="text"] {
+    font-size: 0.7rem;
+    width: 30%;
+    height: auto;  /* 높이 초기화 */
+    line-height: normal;  /* line-height 초기화 */
+    padding: .4em .3em;  /* 여백 설정 */
+}
+
+
+
+.userOn {
+    font-size: 0.7rem;
+}
+
+.userOn:hover{
+    transform: none;
 }
 
 footer {
@@ -114,4 +153,14 @@ footer {
     .main-section h1 {
         font-size: 20px;
     }
+    .userInputCon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .user-nain{
+        margin: 7px 0 ;
+    }
+
 }
