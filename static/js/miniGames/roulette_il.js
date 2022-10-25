@@ -6,7 +6,7 @@ const product = [
   "초밥", '돈카츠', "라멘", "소바", "스키야키", "오니기리", '오코노미야키', "야키토리", "우동",
 ];
 
-const colors = ["#ff8e7f", "#6ccad0", "#cbbeb5", "#ffe4e1 ", "#929292", "#ff8e7f", "#6ccad0", "#cbbeb5", "#ffe4e1", "#cbbeb5", "#929292"];
+const colors = ["#ff8500", "#6ccad0", "#ffc501", "#fcd8c0 ", "#929292", "#ff8e7f", "#6ccad0", "#cbbeb5", "#fcd8c0", "#ffc501", "#ff8500"];
 
 const newMake = () => {
     const [cw, ch] = [$c.width / 2, $c.height / 2];

@@ -6,7 +6,7 @@ const product = [
   "짜장면", '짬뽕', "마라탕", "꿔바로우", "마라샹궈", "깐풍기", '잡채밥', "팔보채", "마파두부밥",
 ];
 
-const colors = ["#ff8e7f", "#6ccad0", "#cbbeb5", "#ffe4e1 ", "#929292", "#ff8e7f", "#6ccad0", "#cbbeb5", "#ffe4e1", "#cbbeb5", "#929292"];
+const colors = ["#ff8e7f", "#96cc55", "#5c413a", "#f6730b ", "#929292", "#ff8e7f", "#96cc55", "#5c413a", "#f6730b", "#5c413a", "#929292"];
 
 const newMake = () => {
     const [cw, ch] = [$c.width / 2, $c.height / 2];

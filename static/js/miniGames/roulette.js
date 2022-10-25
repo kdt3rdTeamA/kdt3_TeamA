@@ -6,7 +6,7 @@ const product = [
   "양식", '중식', "한식", "일식", "분식", "양식", '중식', "한식", "분식",
 ];
 
-const colors = ["#ff8e7f", "#6ccad0", "#cbbeb5", "#ffe4e1 ", "#929292", "#ff8e7f", "#6ccad0", "#cbbeb5", "#ffe4e1", "#cbbeb5", "#929292"];
+const colors = ["#ff8e7f", "#6ccad0", "#cbbeb5", "#f7ae09", "#929292", "#ff8e7f", "#6ccad0", "#cbbeb5", "#f7ae09", "#cbbeb5", "#929292"];
 
 const newMake = () => {
     const [cw, ch] = [$c.width / 2, $c.height / 2];

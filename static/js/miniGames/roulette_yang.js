@@ -6,7 +6,7 @@ const product = [
   "피자", '샐러드', "파스타", "스테이크", "리조또", "햄버거", '토스트', "샌드위치", "치킨",
 ];
 
-const colors = ["#ff8e7f", "#6ccad0", "#cbbeb5", "#ffe4e1 ", "#929292", "#ff8e7f", "#6ccad0", "#cbbeb5", "#ffe4e1", "#cbbeb5", "#929292"];
+const colors = ["#e6b153", "#e8343f", "#cbbeb5", "#f6ba98", "#929292", "#e6b153", "#e8343f", "#cbbeb5", "#f6ba98", "#cbbeb5", "#929292"];
 
 const newMake = () => {
     const [cw, ch] = [$c.width / 2, $c.height / 2];

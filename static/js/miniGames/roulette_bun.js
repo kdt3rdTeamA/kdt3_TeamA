@@ -5,7 +5,7 @@ const ctx = $c.getContext(`2d`);
 const product = [
   "김밥", '떡볶이', "순대", "라면", "돈까스", "라볶이", '모둠튀김', "쫄면", "냉면",
 ];
-const colors = ["#ff8e7f", "#6ccad0", "#cbbeb5", "#ffe4e1 ", "#929292", "#ff8e7f", "#6ccad0", "#cbbeb5", "#ffe4e1", "#cbbeb5", "#929292"];
+const colors = ["#ff8e7f", "#6ccad0", "#cbbeb5", "#f7ae09", "#929292", "#ff8e7f", "#6ccad0", "#cbbeb5", "#f7ae09", "#cbbeb5", "#929292"];
 
 const newMake = () => {
     const [cw, ch] = [$c.width / 2, $c.height / 2];
