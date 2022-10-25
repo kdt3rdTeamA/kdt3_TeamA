@@ -17,6 +17,17 @@
 <body>
     <%- include('./sideBarRe.ejs') %>
     <header>
+        <button class="descript btn">Description</button>
+        <span class="descriptContent dpnone">
+            6번의 시도 안에 오늘의 단어를 알아내세요.<br>
+            각각의 시도는 5글자의 영어 단어로 이루어 집니다.<br>
+            추측이 맞는지 확인하려면 엔터를 입력하세요.<br>
+            추측한 단어가 얼마나 답에 근접했는지는<br>
+            각 타일의 색으로 표시됩니다.<br>
+            <span class="d-green">초록색</span> = 위치와 글자가 모두 일치<br>
+            <span class="d-yellow">노란색</span> = 위치는 불일치 글자는 일치<br>
+            <span class="d-gray">회색</span> = 땡!
+        </span>
         <h1 id="title">Wordle</h1>
     <hr>
     </header>
