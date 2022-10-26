@@ -8,7 +8,7 @@ body {
 
 .btn {
     background: rgb(76, 78, 170) !important;
-    color: rgb(19, 20, 75) !important;
+    color: rgb(255, 255, 255) !important;
     border: none !important;
 }
 .inputBtn {
@@ -41,9 +41,9 @@ body {
 
 .todoContainer,
 .todoLogo {
-    color: rgb(19, 20, 75) !important;
-    -webkit-text-stroke: 0.5px white !important;
-    -webkit-text-stroke: 0.5px white;
+    color: rgb(255, 255, 255) !important;
+    /* -webkit-text-stroke: 0.5px white !important; */
+    /* -webkit-text-stroke: 0.5px white; */
 }
 
 .todoContainer {
