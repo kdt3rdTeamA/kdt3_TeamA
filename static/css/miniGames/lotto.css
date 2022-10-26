@@ -170,30 +170,22 @@ input#OcheckBox{
         /* background-color: aqua; */
     }    
 }
-/* .light {
+.slide {
     position: relative;
     background: transparent;
     text-transform: uppercase;
     font-weight: 500;
-    font-style: normal;
-    font-size: 0.625rem;
     letter-spacing: 0.3em;
-    color: rgba(223,190,106,0.7);
-    border-radius: 0;
-    padding: 10px 10vw;
-    transition: all 0.1s ease-out;
-    background: linear-gradient(270deg, rgba(230, 230, 230,0.8), rgba(102, 96, 86, 0.8), rgba(34,34,34,0), rgba(34,34,34,0));
-    background-position: 99% 50%;
-    background-size: 300% 300%;
-    text-decoration: none;
+    color: rgba(102, 96, 86, 0);
+    transition: all 0.4s ease-out;
+    /* background: linear-gradient(270deg, rgba(230, 230, 230,0.8), rgba(102, 96, 86, 0.8), rgba(34,34,34,), rgba(34,34,34,)); */
     margin: 0.625rem;
     border: none;
-    border: 1px solid rgba(223,190,106,0.3);
   }
   
-  .light:hover {
+  .slide:hover {
     color: #fff;
-    border: 1px solid rgba(223,190,106,0);
-    color: white;
+    /* border: 1px solid rgba(223,190,106,0); */
+    color: black;
     background-position: 5% 50%;
-  } */
+  }

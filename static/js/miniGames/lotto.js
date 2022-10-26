@@ -52,20 +52,20 @@ form1.addEventListener('click', function (event) {
     }
     // console.log(cnt, bonus, 'line=', i);
     if(cnt===3){
-        document.getElementById('lottoPrint').innerHTML += ' <br><span style="color:black"><i class="bi bi-arrow-90deg-up"></i>저번주 기준 5등!';
+        document.getElementById('lottoPrint').innerHTML += ' <br><span class="slide" ><i class="bi bi-arrow-90deg-up">당첨 </i>저번주 기준 5등!</span>';
         
     }else if(cnt===4) {
-        document.getElementById('lottoPrint').innerHTML += '<br><span style="color:black"><i class="bi bi-arrow-90deg-up"></i>저번주 기준 4등!';
+        document.getElementById('lottoPrint').innerHTML += '<br><span class="slide" ><i class="bi bi-arrow-90deg-up">당첨 </i>저번주 기준 4등!</span>';
     }else if(cnt===5) {
-        document.getElementById('lottoPrint').innerHTML += ' <br><span style="color:black"><i class="bi bi-arrow-90deg-up"></i>저번주 기준 3등!!';
+        document.getElementById('lottoPrint').innerHTML += ' <br><span class="slide" ><i class="bi bi-arrow-90deg-up">당첨 </i>저번주 기준 3등!!</span>';
     }else if(cnt===6) {
-        document.getElementById('lottoPrint').innerHTML += ' <br><span style="color:black"><i class="bi bi-arrow-90deg-up"></i>저번주 기준 1등!!!!';
+        document.getElementById('lottoPrint').innerHTML += ' <br><span class="slide" ><i class="bi bi-arrow-90deg-up">당첨 </i>저번주 기준 1등!!!!</span>';
         Swal.fire({
             icon: 'success',
             title: '1등!?!!!',
         });
     }else if(cnt===5 && bonus>0){
-        document.getElementById('lottoPrint').innerHTML += '<br><span style="color:black"><i class="bi bi-arrow-90deg-up"></i>저번주 기준 2등!!!';
+        document.getElementById('lottoPrint').innerHTML += '<br><span class="slide" ><i class="bi bi-arrow-90deg-up">당첨 </i>저번주 기준 2등!!!</span>';
     }
     document.getElementById('lottoPrint').innerHTML +="<br>";
     cnt=0;
