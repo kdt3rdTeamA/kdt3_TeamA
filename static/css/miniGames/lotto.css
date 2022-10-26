@@ -30,7 +30,7 @@ section{
     color: #000;
 }
 .bi-gem-none{
-    display: none;
+    color: rgba(0,0,0, 0);
 }
 .vline{
     width: 50vw;
@@ -168,8 +168,15 @@ input#OcheckBox{
     .left, .right{
         width: 80vw;
         /* background-color: aqua; */
-    }    
+    }
+    
 }
+@media(max-width: 398px){
+    .bi-gem-none, .bi-gem {
+        display: none;
+    }
+}
+
 .slide {
     position: relative;
     background: transparent;
