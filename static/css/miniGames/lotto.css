@@ -9,6 +9,10 @@ body{
     position: relative;
     font-size: 8vh;
 }
+.title> a{
+    text-decoration: none;
+    color: white;
+}
 .subTitle{
     font-size: 5vh;
     margin: 2vh 0 ;
@@ -21,6 +25,9 @@ section{
 }
 .bi-gem{
     color: white;
+}
+.bi-arrow-90deg-up{
+    color: #000;
 }
 .bi-gem-none{
     display: none;
@@ -62,6 +69,9 @@ input{
     text-align: center;
     font-size: 2vh;
     box-shadow: 0 5px 10px -7px rgba(255, 255, 255 ,1);
+}
+#printBox1>.btn{
+    margin-top: 10px;
 }
 #printBox1, #printBox2 {
     margin: 5vh 0;
@@ -130,7 +140,8 @@ input#OcheckBox{
 @media(max-width: 768px){
     .vline{
         border: none;
-        display: none;
+        width: auto;
+        /* display: none; */
 
     }
     form{
@@ -159,3 +170,30 @@ input#OcheckBox{
         /* background-color: aqua; */
     }    
 }
+/* .light {
+    position: relative;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.625rem;
+    letter-spacing: 0.3em;
+    color: rgba(223,190,106,0.7);
+    border-radius: 0;
+    padding: 10px 10vw;
+    transition: all 0.1s ease-out;
+    background: linear-gradient(270deg, rgba(230, 230, 230,0.8), rgba(102, 96, 86, 0.8), rgba(34,34,34,0), rgba(34,34,34,0));
+    background-position: 99% 50%;
+    background-size: 300% 300%;
+    text-decoration: none;
+    margin: 0.625rem;
+    border: none;
+    border: 1px solid rgba(223,190,106,0.3);
+  }
+  
+  .light:hover {
+    color: #fff;
+    border: 1px solid rgba(223,190,106,0);
+    color: white;
+    background-position: 5% 50%;
+  } */

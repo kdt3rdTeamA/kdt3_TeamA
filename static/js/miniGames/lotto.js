@@ -5,14 +5,13 @@ const winArr=[7, 16, 24, 27, 37, 44];
 const bonusNum=2;
 var arr=[];
 var overArr=[];
-var overCheck;
+var overCheck=false;
 const win = document.querySelectorAll('.printBox> .lottoPrint');
 const gem = document.querySelectorAll('h1> .bi-gem');
     var a=setInterval(function(){
     gem[0].classList.toggle('bi-gem-none');
     gem[1].classList.toggle('bi-gem-none');
 },500);
-
 form1.addEventListener('click', function (event) {
     event.preventDefault();
     document.getElementById('lottoPrint').innerHTML = "";
@@ -51,25 +50,29 @@ form1.addEventListener('click', function (event) {
             }
         }
     }
-    console.log(cnt, bonus, 'line=', i);
+    // console.log(cnt, bonus, 'line=', i);
     if(cnt===3){
-        document.getElementById('lottoPrint').innerHTML += "5등";
-        win[i]
+        document.getElementById('lottoPrint').innerHTML += ' <br><span style="color:black"><i class="bi bi-arrow-90deg-up"></i>저번주 기준 5등!';
+        
     }else if(cnt===4) {
-        document.getElementById('lottoPrint').innerHTML += "4등";
+        document.getElementById('lottoPrint').innerHTML += '<br><span style="color:black"><i class="bi bi-arrow-90deg-up"></i>저번주 기준 4등!';
     }else if(cnt===5) {
-        document.getElementById('lottoPrint').innerHTML += "3등";
+        document.getElementById('lottoPrint').innerHTML += ' <br><span style="color:black"><i class="bi bi-arrow-90deg-up"></i>저번주 기준 3등!!';
     }else if(cnt===6) {
-        document.getElementById('lottoPrint').innerHTML += "1등";
+        document.getElementById('lottoPrint').innerHTML += ' <br><span style="color:black"><i class="bi bi-arrow-90deg-up"></i>저번주 기준 1등!!!!';
+        Swal.fire({
+            icon: 'success',
+            title: '1등!?!!!',
+        });
     }else if(cnt===5 && bonus>0){
-        document.getElementById('lottoPrint').innerHTML += '2등';
+        document.getElementById('lottoPrint').innerHTML += '<br><span style="color:black"><i class="bi bi-arrow-90deg-up"></i>저번주 기준 2등!!!';
     }
     document.getElementById('lottoPrint').innerHTML +="<br>";
     cnt=0;
     bonus=0;
 }
-
 });
+
 form2.addEventListener('click', function (event) {
     event.preventDefault();
     const min = document.querySelector('input[name="NrangeStart"]').value;
@@ -112,7 +115,6 @@ form2.addEventListener('click', function (event) {
 });
 overlap.addEventListener('click', function(){
     overCheck=overlap.checked;
-
 });
 
 function draw(max, draw, min){
