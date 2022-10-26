@@ -21,7 +21,7 @@
 <body>
     <%- include('../sideBarRe.ejs') %>
     <header>
-    <h1 class="title"><i class="bi bi-gem"></i> LOTTO GAME <i class="bi bi-gem"></i></h1>
+    <h1 class="title"><i class="bi bi-gem"></i> <a href="./lotto"> LOTTO GAME </a><i class="bi bi-gem"></i></h1>
     </header>
 
     <section>
@@ -34,7 +34,7 @@
             </div>
             <br>
             <div id="printBox1">
-                <span class="win"><span id="lottoPrint"></span></span>
+                <span id="lottoPrint"></span>
                 <input type="button" class="btn" name="linkBtn" value="당첨 번호 확인"onClick="window.open('https://dhlottery.co.kr/gameResult.do?method=byWin')">
             </div>
         </form>
