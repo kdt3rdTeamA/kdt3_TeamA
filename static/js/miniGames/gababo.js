@@ -14,6 +14,7 @@ let nameBtn = $('.userOn');
 
 nameBtn.on('click', function() {
     userName.text(userInput.val());
+    userInput.val('');
 })
 
 userInput.keyup(function (e) { 

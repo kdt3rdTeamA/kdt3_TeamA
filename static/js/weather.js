@@ -6,7 +6,7 @@ function onGeoGood(position) {
     const lon = position.coords.longitude;
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
     fetch(url).then(response => response.json().then(data => {
-        console.log(data);
+        // console.log(data);
         let nameCon = document.querySelector('.weather span:first-child');
         let weatherCon = document.querySelector('.weather span:last-child');
         nameCon.innerText = data.name;
@@ -52,7 +52,7 @@ function onGeoGood(position) {
 }
 
 function onGeobad() {
-    alert('현재 위치를 찾을 수 없습니다.');
+    alert('위치 정보 사용에 동의하여 주세요!');
 }
 
 
