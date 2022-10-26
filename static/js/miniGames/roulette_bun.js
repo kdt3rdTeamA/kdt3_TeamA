@@ -3,10 +3,9 @@ const ctx = $c.getContext(`2d`);
 
 
 const product = [
-  "국밥", '비빔밥', "소불고기", "제육볶음", "김치찌개", "된장찌개", '삼겹살', "생선구이", "감자탕",
+  "김밥", '떡볶이', "순대", "라면", "돈까스", "라볶이", '모둠튀김', "쫄면", "냉면",
 ];
-
-const colors = ["#ff8e7f", "#6ccad0", "#cbbeb5", "#ffe4e1 ", "#929292", "#ff8e7f", "#6ccad0", "#cbbeb5", "#ffe4e1", "#cbbeb5", "#929292"];
+const colors = ["#ff8e7f", "#6ccad0", "#cbbeb5", "#f7ae09", "#929292", "#ff8e7f", "#6ccad0", "#cbbeb5", "#f7ae09", "#cbbeb5", "#929292"];
 
 const newMake = () => {
     const [cw, ch] = [$c.width / 2, $c.height / 2];
@@ -58,6 +57,7 @@ const rotate = () => {
     
     $c.style.transform = `rotate(-${rotate}deg)`;
     $c.style.transition = `2s`;
+    
     setTimeout(() => Swal.fire({
       title: `${product[ran]} 당첨!`,
       text: `오늘의 메뉴는?! ${product[ran]} 어떠신가요?`,
@@ -67,38 +67,37 @@ const rotate = () => {
       imageAlt: 'Custom image',
     }), 2000);
     let image;
-    if (product[ran] == '국밥') {
-      image = "/static/img/roulette_han/cookbab.PNG";
+    if (product[ran] == '김밥') {
+      image = "/static/img/roulette_bun/kimbab.jpg";
     }
-    if (product[ran] == '비빔밥') {
-      image = "/static/img/roulette_han/bibeambab.PNG";
+    if (product[ran] == '떡볶이') {
+      image = "/static/img/roulette_bun/dduckboki.PNG";
     }
-    if (product[ran] == '소불고기') {
-      image = "/static/img/roulette_han/sobulgogi.PNG";
+    if (product[ran] == '순대') {
+      image = "/static/img/roulette_bun/sundae.PNG";
     }
-    if (product[ran] == '제육볶음') {
-      image = "/static/img/roulette_han/jaeyuk.PNG";
+    if (product[ran] == '라면') {
+      image = "/static/img/roulette_bun/ramian.PNG";
     }
-    if (product[ran] == '김치찌개') {
-      image = "/static/img/roulette_han/kimchi.PNG";
+    if (product[ran] == '돈까스') {
+      image = "/static/img/roulette_bun/donggass.PNG";
     }
-    if (product[ran] == '된장찌개') {
-      image = "/static/img/roulette_han/deunzang.PNG";
+    if (product[ran] == '라볶이') {
+      image = "/static/img/roulette_bun/rabboki.PNG";
     }
-    if (product[ran] == '삼겹살') {
-      image = "/static/img/roulette_han/sam.PNG";
+    if (product[ran] == '모둠튀김') {
+      image = "/static/img/roulette_bun/modoom.PNG";
     }
-    if (product[ran] == '생선구이') {
-      image = "/static/img/roulette_han/fish.PNG";
+    if (product[ran] == '쫄면') {
+      image = "/static/img/roulette_bun/zzolmian.PNG";
     }
-    if (product[ran] == '감자탕') {
-      image = "/static/img/roulette_han/gamza.PNG";
+    if (product[ran] == '냉면') {
+      image = "/static/img/roulette_bun/naegmian.PNG";
     }
     
-   
   }, 1);
+
+
 };
 
 newMake();
-
-

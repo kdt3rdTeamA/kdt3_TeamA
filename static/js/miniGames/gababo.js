@@ -8,8 +8,24 @@ let userScoreLoca = $('.user-score');
 let computerScoreLoca = $('.computer-score');
 let comResult = $('.com-result');
 let userResult = $('.user-result');
+let userName = $('.user-name');
+let userInput = $('.user-nain');
+let nameBtn = $('.userOn');
+
+nameBtn.on('click', function() {
+    userName.text(userInput.val());
+    userInput.val('');
+})
+
+userInput.keyup(function (e) { 
+    if (e.keyCode === 13){
+        nameBtn.click();
+    }
+});
+
 
 resetBtn.attr('disabled', true);
+
 
 
 let switiching = setInterval(function() {

@@ -3,10 +3,10 @@ const ctx = $c.getContext(`2d`);
 
 
 const product = [
-  "짜장면", '짬뽕', "마라탕", "꿔바로우", "마라샹궈", "깐풍기", '잡채밥', "팔보채", "마파두부밥",
+  "초밥", '돈카츠', "라멘", "소바", "스키야키", "오니기리", '오코노미야키', "야키토리", "우동",
 ];
 
-const colors = ["#ff8e7f", "#6ccad0", "#cbbeb5", "#ffe4e1 ", "#929292", "#ff8e7f", "#6ccad0", "#cbbeb5", "#ffe4e1", "#cbbeb5", "#929292"];
+const colors = ["#ff8500", "#6ccad0", "#ffc501", "#fcd8c0 ", "#929292", "#ff8e7f", "#6ccad0", "#cbbeb5", "#fcd8c0", "#ffc501", "#ff8500"];
 
 const newMake = () => {
     const [cw, ch] = [$c.width / 2, $c.height / 2];
@@ -68,32 +68,32 @@ const rotate = () => {
       imageAlt: 'Custom image',
     }), 2000);
     let image;
-    if (product[ran] == '짜장면') {
-      image = "/static/img/roulette_jung/zzazang.PNG";
+    if (product[ran] == '초밥') {
+      image = "/static/img/roulette_il/chobab.PNG";
     }
-    if (product[ran] == '짬뽕') {
-      image = "/static/img/roulette_jung/zzambbong.PNG";
+    if (product[ran] == '돈카츠') {
+      image = "/static/img/roulette_il/donkkach.PNG";
     }
-    if (product[ran] == '마라탕') {
-      image = "/static/img/roulette_jung/maratang.PNG";
+    if (product[ran] == '라멘') {
+      image = "/static/img/roulette_il/ramian_j.PNG";
     }
-    if (product[ran] == '꿔바로우') {
-      image = "/static/img/roulette_jung/gguobarou.PNG";
+    if (product[ran] == '소바') {
+      image = "/static/img/roulette_il/soba.PNG";
     }
-    if (product[ran] == '마라샹궈') {
-      image = "/static/img/roulette_jung/marasang.PNG";
+    if (product[ran] == '스키야키') {
+      image = "/static/img/roulette_il/sukiyaki.PNG";
     }
-    if (product[ran] == '깐풍기') {
-      image = "/static/img/roulette_jung/gganpunggi.PNG";
+    if (product[ran] == '오니기리') {
+      image = "/static/img/roulette_il/onigiri.PNG";
     }
-    if (product[ran] == '잡채밥') {
-      image = "/static/img/roulette_jung/jabchebab.PNG";
+    if (product[ran] == '오코노미야키') {
+      image = "/static/img/roulette_il/okonomi.PNG";
     }
-    if (product[ran] == '팔보채') {
-      image = "/static/img/roulette_jung/palbochae.PNG";
+    if (product[ran] == '야키토리') {
+      image = "/static/img/roulette_il/yakitori.PNG";
     }
-    if (product[ran] == '마파두부밥') {
-      image = "/static/img/roulette_jung/mapatopu.PNG";
+    if (product[ran] == '우동') {
+      image = "/static/img/roulette_il/woodong.PNG";
     }
   }, 1);
 
