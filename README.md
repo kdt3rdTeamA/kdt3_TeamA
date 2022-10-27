@@ -35,10 +35,10 @@
 ### Lotto 게임 동작 화면
 <img width="942" alt="lotoo" src="https://user-images.githubusercontent.com/97078724/198200098-28964b30-8cb7-4f07-98d5-8f863310a84d.PNG">
 
-### Roulette 게임 동작 첫번째 화면 (확인을 클릭 시 해당 영역의 화면으로 이동)
+### Roulette 게임 동작 첫 번째 화면 (확인을 클릭 시 해당 영역의 화면으로 이동)
 <img width="960" alt="룰렛1" src="https://user-images.githubusercontent.com/97078724/198200105-bc2491f1-fd97-4073-8ec3-6deedc601d73.PNG">
 
-### Roulette 게임 동작 두번째 화면 (이동된 화면에서 룰렛을 돌리면 alert 띄워짐)
+### Roulette 게임 동작 두 번째 화면 (이동 된 화면에서 룰렛을 돌리면 alert 띄워짐)
 <img width="959" alt="룰렛2" src="https://user-images.githubusercontent.com/97078724/198200133-ab8cbae8-5243-4ae0-8d19-367b108c2052.PNG">
 
 
