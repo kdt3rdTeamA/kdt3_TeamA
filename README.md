@@ -5,6 +5,10 @@
 ### 목적 
 #### * 공부시간 관리를 위한 시계/시간 기능 제공 및 휴게시간에 간단히 즐길 미니게임 개발
 
+### 사용방법
+##### * 해당 블로그의 방법을 참고하여 nodeJs를 설치하시고 node app.js 를 입력하여 실행 시키시면 됩니다.
+##### * https://devji.tistory.com/entry/Nodejs-%EC%84%A4%EC%B9%98-%EB%B0%8F-Helloworld-%EC%8B%A4%ED%96%89
+
 ### 상세설명
 #### * Pomodoro, Timer, Stopwatch의 시계 기능과 추가적으로 MiniGames 의 기능을 구현한 프로젝트입니다.
 #### * pomodoro.ejs / timer.ejs / stopwatch.ejs 의 pureModule 에 공통 모듈과 테마 (common, sideBar, todo) 를 적용하여 개발 하였습니다.
