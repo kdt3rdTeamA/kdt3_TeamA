@@ -14,6 +14,10 @@
 #### * pomodoro.ejs / timer.ejs / stopwatch.ejs 의 pureModule 에 공통 모듈과 테마 (common, sideBar, todo) 를 적용하여 개발 하였습니다.
 #### * 공통된 요소를 모듈화 함으로써 개발 중 시간과 파일 관리를 효율적으로 하도록 하였습니다.
 
+#### * 주요기능
+##### JQUERY와 JS 기본 문법을 활용해 포모도로 타이머, 타이머, 스톱워치, 미니 게임 등의 기능들을 구현함.
+
+
 ### index.ejs (sideBarJ.ejs 를 include)
 <img width="950" alt="main" src="https://user-images.githubusercontent.com/97078724/198198796-b550b0ae-7cdb-4222-937e-c3855857eeed.PNG">
 
